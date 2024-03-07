@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <i class="fa-solid fa-bars"></i>
+title: Others
 nav: true
 nav_order: 8
 dropdown: true

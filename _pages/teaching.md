@@ -1,10 +1,9 @@
 ---
 layout: page
-permalink: /Teaching/
+permalink: /teaching/
 title: Teaching
 description: Materials for courses you taught. Replace this text with your description.
-nav: true
-nav_order: 6
+nav: false
 ---
 
 I've served as a teaching assistant for the following courses at the Department of Electrical Engineering, IISc, Bangalore:

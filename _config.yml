@@ -26,9 +26,9 @@ impressum_path: # set to path to include impressum link in the footer, use the s
 # Theme
 # -----------------------------------------------------------------------------
 
-# code highlighter theme
-highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
-highlight_theme_dark: monokai    # https://github.com/jwarby/jekyll-pygments-themes
+# # code highlighter theme
+# highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
+# highlight_theme_dark: monokai    # https://github.com/jwarby/jekyll-pygments-themes
 
 # repo color theme
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
@@ -54,7 +54,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 1500px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 

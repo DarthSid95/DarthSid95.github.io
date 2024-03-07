@@ -10,7 +10,7 @@ nav_order: 8
 <script src="/assets/js/script.js" type="text/javascript">
 </script>
 
-<style type="text/css">
+<style>
 .bal-container {
     position: relative;
     width: 100%;

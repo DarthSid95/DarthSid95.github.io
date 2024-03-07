@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <img src="/assets/img/images-solid.svg">
+title: <i class="fa-solid fa-images"></i>
 permalink: /photography/
 description: A growing collection of your cool projects.
 nav: true

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <img src="/assets/img/dog-solid.svg">
+title: <i class="fa-solid fa-dog"></i>
 permalink: /doggo/
 description: A growing collection of your cool projects.
 nav: true

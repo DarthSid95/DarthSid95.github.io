@@ -3,6 +3,21 @@ layout: about
 title: about
 permalink: /
 subtitle: RSDE @ <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-india'>MSRI</a>, Bangalore | Ph.D. @ <a href='https://cps.iisc.ac.in'>RBCCPS</a>, <a href='https://iisc.ac.in'>IISc</a>, Bangalore.
+
+profile:
+align: right
+image: ProfilePic.png
+image_circular: false # crops the image to make it circular Currently ABD and looking for research opportunities!
+address: >
+<p>``Vigyan'', No. 9,</p>
+<p>Microsoft Research Lab,</p>
+<p>Lavelle Road, Bengaluru,</p>
+<p>Karnataka, 560001</p>
+
+news: true # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
+
 ---
 
 <script src="/assets/js/typewriter.js"></script>
@@ -133,21 +148,7 @@ subtitle: RSDE @ <a href='https://www.microsoft.com/en-us/research/lab/microsoft
 }
 </style>
 
-profile:
-align: right
-image: ProfilePic.png
-image_circular: false # crops the image to make it circular Currently ABD and looking for research opportunities!
-address: >
-<p>``Vigyan'', No. 9,</p>
-<p>Microsoft Research Lab,</p>
-<p>Lavelle Road, Bengaluru,</p>
-<p>Karnataka, 560001</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
----
 
 <!---_I'm currently All but defense, and looking for opportunities in generative modeling in Academia/Industry!!_ --->
 

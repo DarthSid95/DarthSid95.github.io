@@ -8,7 +8,7 @@ subtitle: RSDE @ <a href='https://www.microsoft.com/en-us/research/lab/microsoft
 
 profile:
   align: right
-  image: ProfilePic.jpg
+  image: ProfilePic.png
   image_circular: false # crops the image to make it circular 
   address: >
     <p>``Vigyan'', No. 9,</p>
@@ -27,10 +27,7 @@ Hi! I'm a Research Software Development Engineer (RSDE) at the <a href='https://
 
 My research interests are broadly in the area of machine learning and generative modeling, with a focus, during my Ph.D., on generative adversarial networks (GANs). My Ph.D. was on building theoretical foundations for analyzing GANs, leveraging insights from classical signal processing, and designing network architectures motivated by those findings. Recently, I've (like everyone else that worked with GANs) also been exploring score-based diffusion and normalizing-flow models! 
 
-Throughout my Ph.D. I've been graciously funded by the Microsoft Research Ph.D. Fellowship in 2018, the RBCCPS Ph.D. Fellowship in 2020-2021, and 2021-2022, and the Qualcomm Innovation Fellowship in 2019, 2021, 2022 and 2023!
-
-Looking to collaborate or know more about my research? <br>
-Reach out to me at [FirstLetterOfFirstName][LastName] (at) microsoft (dot) com
+Throughout my Ph.D. I've been graciously funded by the Microsoft Research Ph.D. Fellowship in 2018, the RBCCPS Ph.D. Fellowship in 2020-2021, and 2021-2022, and the Qualcomm Innovation Fellowship in 2019, 2021, 2022 and 2023! My Thesis also won the Prof. Satish Dhawan Research Award 2023!!
 
 
 <!---

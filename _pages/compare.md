@@ -25,8 +25,8 @@ nav_order: 8
 
 /* Our wrapper */
 .wrapper{
-  width: 1024px;
-  height: 1024px;
+  width: 512px;
+  height: 512px;
   position: absolute;
   left:50%;
   top:50%;
@@ -56,7 +56,7 @@ nav_order: 8
 }
 
 .after{
-  width:512px;
+  width:256px;
 }
 
 .scroller{

@@ -3,6 +3,135 @@ layout: about
 title: about
 permalink: /
 subtitle: RSDE @ <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-india'>MSRI</a>, Bangalore | Ph.D. @ <a href='https://cps.iisc.ac.in'>RBCCPS</a>, <a href='https://iisc.ac.in'>IISc</a>, Bangalore.
+---
+
+<script src="/assets/js/typewriter.js"></script>
+<div class="hero" id="home">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="hero-content">
+                <div class="hero-text">
+                  <p>Hi! I'm</p>
+                  <h1>Siddarth Asokan. </h1>
+                  <h2>
+                    RDSE @ Microsoft Research, Bangalore <br>
+                    PhD @ IISc, Bangalore
+                  </h2>
+                  <h3> A Firey Passion for 
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "Signal Processing.", "Generative Modeling.", "Machine Learning "]'>
+                      <span class="wrap"></span>
+                    </a>
+                  </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 250px 0 250px 0;
+    overflow: hidden;
+    background: linear-gradient(rgba(10,10,10, .25), rgba(20,20,20, .25)), url(../assets/img/BannerPic3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .container-fluid {
+    padding: 0;
+}
+
+.hero .hero-image {
+    position: relative;
+    text-align: right;
+    padding-right: 0px;
+}
+
+.hero .hero-image img {
+    max-width: 100%;
+    max-height: 500%;
+}
+
+.hero .hero-content {
+    position: relative;
+    padding-left: 75px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .hero-text p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero .hero-text h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero .hero-text h2 {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    height: 35px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.hero .hero-text .typed-text {
+    display: none;
+}
+
+.hero .hero-text .typed-cursor {
+    font-size: 35px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.hero .hero-btn .btn {
+    margin-top: 35px;
+    color: #6723ef;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.hero .hero-btn .btn:hover {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    border-color: #ffffff;
+}
+
+.hero .hero-btn .btn:first-child {
+    margin-right: 10px;
+}
+
+.hero .typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+</style>
 
 profile:
   align: right

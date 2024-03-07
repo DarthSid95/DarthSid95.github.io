@@ -11,7 +11,7 @@ profile:
   image: ProfilePic.png
   image_circular: false # crops the image to make it circular 
   address: >
-    <p>``Vigyan'', No. 9,</p>
+    <p>Vigyan, No. 9,</p>
     <p>Microsoft Research Lab,</p>
     <p>Lavelle Road, Bengaluru,</p>
     <p>Karnataka, 560001</p>
@@ -23,7 +23,7 @@ social: true  # includes social icons at the bottom of the page
 
 <!---_I'm currently All but defense, and looking for opportunities in generative modeling in Academia/Industry!!_ --->
 
-Hi! I'm a Research Software Development Engineer (RSDE) at the <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-india'>Microsoft Research Lab</a> (MSRI) in Bangalore, India, as part of [Manik Varma's](http://manikvarma.org/) group, and currently exploring the world of text-based generative models (or Tiny/Small/Large Language Models, as people call them these days) in the context of [eXtreme Classification](http://manikvarma.org/downloads/XC/XMLRepository.html). Previously, I was an interdisciplinary Direct-Ph.D. scholar at the [Robert Bosch Center for Cyber-Physical Systems](https://cps.iisc.ac.in) (RBCCPS) at the [Indian Institute of Science](http://iisc.ac.in), Bangalore. I worked at the Spectrum Lab in the Department of Electrical Engineering, under the supervision of Prof. [Chandra Sekhar Seelamantula](https://sites.google.com/site/chandrasekharseelamantula). Before that, I was at [M.S. Ramaiah Institute of Technology](http://msrit.edu) (MSRIT), Bangalore, where I completed my Bachelors in Engineering in Electronics and Communications. Check out my full [CV](/cv/) or [publications](/publications/). Amongst other things, I love [photography](/photography/) and [Misty, my doggo!!](/doggo/)
+<!-- Hi! I'm a Research Software Development Engineer (RSDE) at the <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-india'>Microsoft Research Lab</a> (MSRI) in Bangalore, India, as part of [Manik Varma's](http://manikvarma.org/) group, and currently exploring the world of text-based generative models (or Tiny/Small/Large Language Models, as people call them these days) in the context of [eXtreme Classification](http://manikvarma.org/downloads/XC/XMLRepository.html). Previously, I was an interdisciplinary Direct-Ph.D. scholar at the [Robert Bosch Center for Cyber-Physical Systems](https://cps.iisc.ac.in) (RBCCPS) at the [Indian Institute of Science](http://iisc.ac.in), Bangalore. I worked at the Spectrum Lab in the Department of Electrical Engineering, under the supervision of Prof. [Chandra Sekhar Seelamantula](https://sites.google.com/site/chandrasekharseelamantula). Before that, I was at [M.S. Ramaiah Institute of Technology](http://msrit.edu) (MSRIT), Bangalore, where I completed my Bachelors in Engineering in Electronics and Communications. Check out my full [CV](/cv/) or [publications](/publications/). Amongst other things, I love [photography](/photography/) and [Misty, my doggo!!](/doggo/) -->
 
 My research interests are broadly in the area of machine learning and generative modeling, with a focus, during my Ph.D., on generative adversarial networks (GANs). My Ph.D. was on building theoretical foundations for analyzing GANs, leveraging insights from classical signal processing, and designing network architectures motivated by those findings. Recently, I've (like everyone else that worked with GANs) also been exploring score-based diffusion and normalizing-flow models! 
 

@@ -7,124 +7,180 @@ nav: true
 nav_order: 8
 ---
 
-<script src="/assets/js/Slider.js" type="text/javascript">
+<script src="/assets/js/script.js" type="text/javascript">
 </script>
 
-<style>
-    #page{
-  width:100%;
-  height:100%;
-  position:absolute;
+<style type="text/css">
+.bal-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+    overflow: hidden;
+}
+.bal-after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.bal-before {
+    display: block;
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    overflow: hidden;
+}
+.bal-before-inset {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.bal-after img,
+.bal-before img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.bal-beforePosition {
+    background: #121212;
+    color: #fff;
+    left: 0;
+    pointer-events: none;
+    border-radius: 0.2rem;
+    padding: 2px 10px;
+}
+.bal-afterPosition {
+    background: #121212;
+    color: #fff;
+    right: 0;
+    pointer-events: none;
+    border-radius: 0.2rem;
+    padding: 2px 10px;
+}
+.beforeLabel {
+    position: absolute;
+    bottom: 0;
+    margin: 1rem;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.afterLabel {
+    position: absolute;
+    bottom: 0;
+    margin: 1rem;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
-/* Our normalize css */
-*{
-  margin:0;
-  box-sizing: border-box;
+.bal-handle {
+    height: 41px;
+    width: 41px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -21px;
+    border: 2px solid #fff;
+    border-radius: 1000px;
+    z-index: 20;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgb(12, 12, 12);
 }
-
-/* Our wrapper */
-.wrapper{
-  width: 512px;
-  height: 512px;
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform:translate3d(-50%,-50%,0);
-  overflow:hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+.handle-left-arrow,
+.handle-right-arrow {
+    width: 0;
+    height: 0;
+    border: 6px inset transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
 }
-
-/* Our image information */
-.before,
-.after {
-  width:100%;
-  height:100%;
-  background-repeat:no-repeat;
-  background-color: white;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top:0;
-  left:0;
-  pointer-events:none;
-  overflow: hidden;
+.handle-left-arrow {
+    border-right: 6px solid #fff;
+    left: 50%;
+    margin-left: -17px;
 }
-
-.content-image{
-  height:100%;
+.handle-right-arrow {
+    border-left: 6px solid #fff;
+    right: 50%;
+    margin-right: -17px;
 }
-
-.after{
-  width:256px;
+.bal-handle::before {
+    bottom: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgb(12, 12, 12);
 }
-
-.scroller{
-  width: 50px;
-  height:50px;
-  position: absolute;
-  left:256px;
-  top:50%;
-  transform:translateY(-50%);
-  border-radius:50%;
-  background-color: transparent;
-  opacity:0.9;
-  pointer-events:auto;
-  cursor: pointer;
+.bal-handle::after {
+    top: 50%;
+    margin-top: 20.5px;
+    box-shadow: 0 0 5px rgb(12, 12, 12);
 }
-
-.scroller:hover{
-  opacity:1;
-}
-
-.scrolling{
-  pointer-events:none;
-  opacity:1;
-  // z-index: 1;
-}
-
-.scroller__thumb{
-  width:100%;
-  height:100%;
-  padding:5px;
-}
-
-.scroller:before,
-.scroller:after{
-  content:" ";
-  display: block;
-  width: 7px;
-  height: 9999px;
-  position: absolute;
-  left: 50%;
-  margin-left: -3.5px;
-  z-index: 30;
-  transition:0.1s;
-}
-.scroller:before{
-  top:100%;
-}
-.scroller:after{
-  bottom:100%;
-}
-
-/* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
-.scroller{
-  border: 5px solid #fff;
-}
-.scroller:before,
-.scroller:after{
-  background: #fff;
+.bal-handle::before,
+.bal-handle::after {
+    content: " ";
+    display: block;
+    width: 2px;
+    background: #fff;
+    height: 9999px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5px;
 }
 </style>
 
-<div class="wrapper">
-  <div class="before">
-    <img class="content-image" src="/assets/img/left/L1.png" draggable="false"/>   </div>
-  <div class="after">
-    <img class="content-image" src="/assets/img/right/R1.png" draggable="false"/>
+<div id="Compare" class="bal-container">
+  <div class="bal-after">
+    <img src="/assets/img/left/L1.png">
+    <div class="bal-afterPosition afterLabel">
+      Real
+    </div>
   </div>
-  <div class="scroller">
-    <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#fff"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#fff"/></svg>
+  <div class="bal-before">
+    <div class="bal-before-inset">
+    <img src="/assets/img/right/R1.png">
+      <div class="bal-beforePosition beforeLabel">
+        UnReal!
+      </div>
+    </div>
+  </div>
+  <div class="bal-handle">
+    <span class="handle-left-arrow"></span>
+    <span class="handle-right-arrow"></span>
   </div>
 </div>
+
+<script  type="text/javascript">
+    new BeforeAfter({
+        id: '#Compare'
+    });
+</script>

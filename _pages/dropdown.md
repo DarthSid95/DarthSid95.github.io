@@ -1,18 +1,18 @@
 ---
 layout: page
-title: Others
+title: <i class="fa-solid fa-bars"></i>
 nav: true
 nav_order: 8
 dropdown: true
 children:
-  - title: repositories
-    permalink: /repositories/
-  - title: teaching
+  - title: Teaching
     permalink: /teaching/
   - title: divider
-  - title: projects
+  - title: Projects
     permalink: /projects/
+  - title: Repositories
+    permalink: /repositories/
   - title: divider
-  - title: blog
+  - title: Blog
     permalink: /blog/
 ---

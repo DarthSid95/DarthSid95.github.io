@@ -11,22 +11,21 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Research Sowtware Development Engineer (RSDE) II 
+    - title: Research Sowtware Development Engineer (RSDE) II
       institution: Miscrosoft Research Lab India Pvt. Ltd., Bengaluru, India
-      year: 2023 (Nov) -- 
+      year: 2023 (Nov) --
       description:
         - Extreme Classification.
         - Generative modeling.
         - Information Search and Retrieval.
     - title: Project Associate
-      institution: Spectrum Lab, Department of Electrical Engineering Indian Institute of Science, Bengaluru, India 
+      institution: Spectrum Lab, Department of Electrical Engineering Indian Institute of Science, Bengaluru, India
       year: 2023 (Aug--Oct)
       description:
         - Langevin diffusion models.
         - High-dimensional Interpolation.
         - Variational Calculus, Fourier analysis.
         - Discriminator Guidance in Score-based Diffusion
-
 
 - title: Education
   type: time_table
@@ -88,48 +87,48 @@
   type: time_table
   contents:
     - year: 2017
-      items: 
+      items:
         - Runners Up - Ideathon (IISc - MSRIT Symposium on Smart Cities)
         - Runners Up (best project - MSRIT, Class of 2017)
         - Gold Medal (Highest Cumulative GPA - MSRIT, Class of 2017)
     - year: 2018
-      items: 
+      items:
         - Microsoft Research (MSR) Ph.D. Fellowship
     - year: 2019
-      items: 
+      items:
         - Winner - Qualcomm Innovation Felowship
     - year: 2020
-      items: 
+      items:
         - Finalist - Qualcomm Innovation Felowship
         - Winner - Robert Bosch Center for Cyber-Physical Systems (RBCCPS) Ph.D. Fellowship
     - year: 2021
-      items: 
+      items:
         - Winner - Qualcomm Innovation Felowship
         - Winner - Robert Bosch Center for Cyber-Physical Systems (RBCCPS) Ph.D. Fellowship
     - year: 2022
-      items: 
+      items:
         - Winner - Qualcomm Innovation Felowship
     - year: 2023
-      items: 
+      items:
         - Super Winner - Qualcomm Innovation Felowship
         - Best Presenter – 14th IISc EECS Symposium – AI/ML Track
     - year: 2024
-      items: 
+      items:
         - Prof. Satish Dhawan Research Award 2023
 
 - title: Relavant Coursework
   type: nested_list
   contents:
     - title: Core Mathematics
-      items: 
+      items:
         - (E1-222, Aug 2017) Stochastic Models and Applications
         - (E1-251, Aug 2017) Linear and Non-linear Optimization
         - (E9-396, Aug 2018) Topics in Stochastic Approximation Algorithms
     - title: Image Processing
-      items: 
+      items:
         - (E9-241, Aug 2017) Digital Image Processing
         - (E9-246, Jan 2018) Advanced Image Processing
-    - title: Machine Learning 
+    - title: Machine Learning
       items:
         - (E1-213, Jan 2018) Pattern Recognition and Neural Networks
         - (E1-277, Jan 2018) Reinforcement Learning

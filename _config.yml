@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Siddarth
-middle_name: 
+middle_name:
 last_name: Asokan
 email: sasokan@microsoft.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -18,7 +18,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: <i class="fa-solid fa-s"></i> # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: DarthSid95.github.io # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
+baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -288,7 +288,7 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 
 scholar:
   last_name: [Asokan]
-  first_name: [Siddarth, ]
+  first_name: [Siddarth]
 
   style: apa
   locale: en
@@ -320,7 +320,7 @@ enable_publication_badges:
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
   [abbr, abstract, altmetric, arxiv, bibtex_show, blog, code, html, pdf, poster, preview, selected, slides, supp, video, website]
-  
+
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
 max_author_limit: 3 # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation

@@ -54,10 +54,10 @@
       "courses": [
         "Stochastic Models and Applications",
         "Linear and Non-linear Optimization",
-        "(E9-241, Aug 2017) Digital Image Processing",
-        "(E1-213, Jan 2018) Pattern Recognition and Neural Networks",
-        "(E1-277, Jan 2018) Reinforcement Learning",
-        "(E9-205, Aug 2018) Machine Learning for Signal Processing"
+        "Digital Image Processing",
+        "Pattern Recognition and Neural Networks",
+        "Reinforcement Learning",
+        "Machine Learning for Signal Processing"
       ]
     },
     {
@@ -68,7 +68,7 @@
       "studyType": "Bachelors of Engineering (B.E.)",
       "startDate": "2013",
       "endDate": "2027",
-      "score": "9.98/10"
+      "score": "9.96/10"
     }
   ],
   "awards": [

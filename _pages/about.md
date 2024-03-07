@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: RSDE @ <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-india'>MSRI</a>, Bangalore | Ph.D. @ <a href='https://cps.iisc.ac.in'>RBCCPS</a>, <a href='https://iisc.ac.in'>IISc</a>, Bangalore.
 

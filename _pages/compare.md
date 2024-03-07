@@ -6,7 +6,8 @@ description: Competing against our AI Overlord
 nav: true
 nav_order: 8
 ---
-<script src="Slider.js" type="text/javascript">
+
+<script src="/assets/js/Slider.js" type="text/javascript">
 </script>
 
 <style>

@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     var captions = [
-        '/assets/img/caption/C1.txt',
-        '/assets/img/caption/C2.txt'
+        '/assets/img/captions/C1.txt',
+        '/assets/img/captions/C2.txt'
     ]
 
     // Function to select a random index

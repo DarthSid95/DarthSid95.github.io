@@ -12,7 +12,7 @@ nav_order: 8
     position: relative;
     width: 100%;
     margin: auto; 
-    max-width: 100% 
+    max-width: 512px 
     overflow: hidden; 
 }
 
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '/assets/img/right/R11.png',
         '/assets/img/right/R12.png',
         '/assets/img/right/R13.png',
-        '/assets/img/right/R15.png'
+        '/assets/img/right/R14.png'
     ];
 
     var captions = [

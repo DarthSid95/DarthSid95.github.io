@@ -45,7 +45,6 @@ nav_order: 8
     text-align: center;
     margin-bottom: 10px;
     font-size: 16px; /* Adjust as needed */
-    color: #111; /* Adjust as needed */
 }
 
 </style>

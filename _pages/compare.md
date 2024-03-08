@@ -32,15 +32,30 @@ nav_order: 8
     position: absolute;
     z-index: 9;
     cursor: ew-resize;
-    width: 5px; /* Adjust as needed */
+    width: 10px; /* Make the slider thicker for easier interaction */
     height: 100%;
     background-color: #2196F3; /* Slider color */
     left: 50%; /* Initial position */
+    /* Add a shadow or border for better visibility */
+    box-shadow: 0 0 5px #000;
 }
 </style>
 
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize image selection
+    var baseImages = ['image1_base.jpg', 'image2_base.jpg', 'image3_base.jpg', 'image4_base.jpg'];
+    var overlayImages = ['image1_overlay.jpg', 'image2_overlay.jpg', 'image3_overlay.jpg', 'image4_overlay.jpg'];
+
+    function selectRandomImage(imageArray) {
+        var index = Math.floor(Math.random() * imageArray.length);
+        return imageArray[index];
+    }
+
+    document.getElementById('base-image').src = selectRandomImage(baseImages);
+    document.getElementById('overlay-image').src = selectRandomImage(overlayImages);
+
+    // Slider functionality
     var container = document.getElementById('image-compare-container');
     var slider = container.querySelector('.image-compare-slider');
     var overlay = container.querySelector('.image-compare-overlay');
@@ -48,40 +63,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var dragStart = function(e) {
         isDragging = true;
-        // Prevent any text selection during the drag
+        // Use preventDefault to avoid selecting text/images on drag
         e.preventDefault();
+    };
+
+    var dragMove = function(e) {
+        if (!isDragging) return;
+        var rect = container.getBoundingClientRect();
+        var xPos = e.pageX - rect.left; // Get the x position within the container
+        // Adjust for touch devices
+        if (e.touches) {
+            xPos = e.touches[0].pageX - rect.left;
+        }
+
+        // Clamp the position of the slider within the container
+        var position = Math.max(0, Math.min(xPos, rect.width));
+
+        overlay.style.width = position + "px";
+        slider.style.left = position + "px";
     };
 
     var dragEnd = function() {
         isDragging = false;
     };
 
-    var dragMove = function(e) {
-        if (!isDragging) return;
-        e.preventDefault();
-        var rect = container.getBoundingClientRect();
-        var x = 0;
-        // Determine if it's a touch event
-        if (e.type === 'touchmove') {
-            x = e.touches[0].clientX - rect.left;
-        } else {
-            x = e.clientX - rect.left;
-        }
-        var width = Math.max(0, Math.min(x, rect.width));
-        overlay.style.width = width + 'px';
-        slider.style.left = width + 'px';
-    };
-
-    // Event listeners for mouse
+    // Attach mouse events
     slider.addEventListener('mousedown', dragStart);
-    window.addEventListener('mouseup', dragEnd);
     window.addEventListener('mousemove', dragMove);
+    window.addEventListener('mouseup', dragEnd);
 
-    // Event listeners for touch
-    container.addEventListener('touchstart', dragStart, { passive: true });
+    // Attach touch events
+    container.addEventListener('touchstart', dragStart, {passive: true});
+    container.addEventListener('touchmove', dragMove, {passive: true});
     container.addEventListener('touchend', dragEnd);
-    container.addEventListener('touchmove', dragMove, { passive: true });
 });
+
 </script>
 
 <div id="image-compare-container" class="image-compare-container">

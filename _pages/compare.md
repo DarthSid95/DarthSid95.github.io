@@ -11,7 +11,7 @@ nav_order: 8
 .image-compare-container {
     position: relative;
     width: 100%;
-    max-width: 500px; /* Adjust as needed */
+    max-width: 1024px; /* Adjust as needed */
     overflow: hidden; /* Ensure nothing spills outside the container */
 }
 
@@ -88,5 +88,4 @@ document.addEventListener('DOMContentLoaded', function() {
         <img id="overlay-image" alt="Overlay Image" class="image-compare-image">
         <div class="image-compare-slider"></div>
     </div>
-</div>
 </div>

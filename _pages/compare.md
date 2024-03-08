@@ -10,8 +10,9 @@ nav_order: 8
 <style>
 .image-compare-container {
     position: relative;
-    width: 50%;
-    max-width: 512px; /* Adjust as needed */
+    width: 100%;
+    margin: auto; /* Center the container */
+    max-width: 50% /* Adjust as needed */
     overflow: hidden; /* Ensure nothing spills outside the container */
 }
 

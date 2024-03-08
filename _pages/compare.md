@@ -10,7 +10,7 @@ nav_order: 8
 <style>
 .image-compare-container {
     position: relative;
-    width: 100%;
+    width: 50%;
     margin: auto; /* Center the container */
     max-width: 50% /* Adjust as needed */
     overflow: hidden; /* Ensure nothing spills outside the container */
@@ -42,18 +42,10 @@ nav_order: 8
 }
 
 .image-caption {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-    color: #333; /* Dark text color for contrast */
-    padding: 5px 10px; /* Add some padding around the text */
-    border-radius: 5px; /* Optional: adds rounded corners */
-    font-size: 20px; /* Adjust as needed */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow for depth */
-    z-index: 10; /* Ensure it's above the images */
-    max-width: 90%; /* Prevents the caption from becoming too wide */
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px; /* Adjust as needed */
+    color: #333; /* Adjust as needed */
 }
 
 </style>

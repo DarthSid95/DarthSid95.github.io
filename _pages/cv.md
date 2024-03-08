@@ -5,7 +5,7 @@ title: CV
 nav: true
 nav_order: 2
 cv_pdf: SiddarthAsokanCV.pdf
-description: 
+description:
 toc:
   sidebar: left
 ---

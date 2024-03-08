@@ -3,5 +3,7 @@
     "@shopify/prettier-plugin-liquid": "^1.4.4",
     "prettier": "^3.2.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "image-compare-viewer": "^1.6.2"
+  }
 }

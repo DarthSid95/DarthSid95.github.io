@@ -6,4 +6,3 @@ description: Competing against our AI Overlord
 nav: true
 nav_order: 8
 ---
-

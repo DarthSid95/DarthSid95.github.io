@@ -26,10 +26,9 @@ nav_order: 8
     <span class="handle-right-arrow"></span>
   </div>
 </div>
-<script src="/assets/js/script.js" type="text/javascript"></script>
 
-<script  type="text/javascript">
-    new BeforeAfter({
-        id: '#Compare'
-    });
-</script>
+  <script  type="text/javascript">
+      new BeforeAfter({
+          id: '#Compare'
+      });
+  </script>

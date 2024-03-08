@@ -8,12 +8,19 @@ nav_order: 8
 ---
 
 <style>
-.image-compare-container {
+/*.image-compare-container {
     position: relative;
-    width: 50%;
-    margin: auto; /* Center the container */
-    max-width: 50% /* Adjust as needed */
-    overflow: hidden; /* Ensure nothing spills outside the container */
+    width: 100%;
+    margin: auto; 
+    max-width: 100% 
+    overflow: hidden; 
+}*/
+.image-comparison-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children (caption and image container) horizontally */
+    justify-content: center; /* Center the entire wrapper vertically if desired */
+    min-height: 100vh; /* Optional: Use for full page height alignment */
 }
 
 .image-compare-image {
@@ -45,7 +52,7 @@ nav_order: 8
     text-align: center;
     margin-bottom: 10px;
     font-size: 16px; /* Adjust as needed */
-    color: #333; /* Adjust as needed */
+    color: #111; /* Adjust as needed */
 }
 
 </style>

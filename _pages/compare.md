@@ -20,7 +20,6 @@ nav_order: 8
     flex-direction: column;
     align-items: center; /* Center children (caption and image container) horizontally */
     justify-content: center; /* Center the entire wrapper vertically if desired */
-    min-height: 100vh; /* Optional: Use for full page height alignment */
 }
 
 .image-compare-image {

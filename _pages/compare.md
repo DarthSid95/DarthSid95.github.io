@@ -39,6 +39,13 @@ nav_order: 8
     left: 50%; /* Initial position */
     box-shadow: 0 0 5px #000;
 }
+
+.image-caption {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px; /* Adjust as needed */
+    color: #333; /* Adjust as needed */
+}
 </style>
 
 <script type="text/javascript">
@@ -53,6 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
         '/assets/img/right/R2.png'
     ];
 
+    var captions = [
+        '/assets/img/caption/C1.txt',
+        '/assets/img/caption/C2.txt'
+    ]
+
     // Function to select a random index
     function selectRandomIndex(imageArray) {
         return Math.floor(Math.random() * imageArray.length);
@@ -64,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set the source for the base and overlay images using the same index
     document.getElementById('base-image').src = baseImages[index];
     document.getElementById('overlay-image').src = overlayImages[index];
+    document.getElementById('caption').textContent = captions[index]; // Set caption
 
     // Reference to the container, overlay, and slider elements
     var container = document.getElementById('image-compare-container');
@@ -80,11 +93,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<div id="caption" class="image-caption">Caption goes here</div>
 <div id="image-compare-container" class="image-compare-container">
-    <!-- Placeholder for base image -->
     <img id="base-image" alt="Base Image" class="image-compare-image">
     <div class="image-compare-overlay" style="width: 50%;">
-        <!-- Placeholder for overlay image -->
         <img id="overlay-image" alt="Overlay Image" class="image-compare-image">
         <div class="image-compare-slider"></div>
     </div>

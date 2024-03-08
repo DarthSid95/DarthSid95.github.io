@@ -8,24 +8,40 @@ nav_order: 8
 ---
 
 <style>
+.image-comparison-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center the entire wrapper vertically, if you're using it for full page */
+    min-height: 100vh; /* Optional: For full-page height alignment */
+    padding: 20px; /* Adds some space around the content */
+}
+
+.image-caption {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for legibility */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px; /* Space between caption and image comparison tool */
+}
+
 .image-compare-container {
     position: relative;
-    width: 100%;
-    margin: auto; 
-    max-width: 512px 
-    overflow: hidden; 
+    width: 512px; /* Set to the specific width of your images */
+    margin: auto; /* Centers the container horizontally */
 }
 
 .image-compare-image {
-    height: 100%; /* Ensure images always take up 100% of the container's height */
-    width: auto; /* Adjust width automatically to maintain aspect ratio */
     display: block;
+    width: 512px; /* Width of the images */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .image-compare-overlay {
     position: absolute;
     top: 0;
     left: 0;
+    width: 256px; /* Starting point of the slider at halfway */
     height: 100%; /* Overlay takes full height of the container */
     overflow: hidden; /* Crop the overlay image based on the container's width */
 }
@@ -37,16 +53,9 @@ nav_order: 8
     width: 10px;
     height: 100%;
     background-color: #2196F3;
-    left: 256px; /* Initial position */
+    left: 256px; /* Initial position at the halfway point */
     box-shadow: 0 0 5px #000;
 }
-
-.image-caption {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 16px; /* Adjust as needed */
-}
-
 </style>
 
 <script type="text/javascript">

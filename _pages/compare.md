@@ -19,6 +19,7 @@ nav_order: 8
 
 .image-caption {
     background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for legibility */
+    color: #333; /* Dark text for contrast */
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 16px;

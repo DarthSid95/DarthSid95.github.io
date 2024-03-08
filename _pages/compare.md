@@ -8,18 +8,12 @@ nav_order: 8
 ---
 
 <style>
-/*.image-compare-container {
+.image-compare-container {
     position: relative;
     width: 100%;
     margin: auto; 
     max-width: 100% 
     overflow: hidden; 
-}*/
-.image-comparison-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center children (caption and image container) horizontally */
-    justify-content: center; /* Center the entire wrapper vertically if desired */
 }
 
 .image-compare-image {

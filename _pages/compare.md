@@ -23,7 +23,7 @@ nav_order: 8
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%; /* Initial overlay width to show both images */
     height: 100%;
     overflow: hidden;
 }
@@ -31,74 +31,65 @@ nav_order: 8
 .image-compare-slider {
     position: absolute;
     z-index: 9;
-    cursor: ew-resize;
-    width: 10px; /* Make the slider thicker for easier interaction */
+    cursor: pointer; /* Change to pointer to indicate clickable */
+    width: 10px; /* Adjust for visibility */
     height: 100%;
     background-color: #2196F3; /* Slider color */
     left: 50%; /* Initial position */
-    /* Add a shadow or border for better visibility */
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000; /* Improved visibility */
 }
 </style>
 
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize image selection
-    var baseImages = ['image1_base.jpg', 'image2_base.jpg', 'image3_base.jpg', 'image4_base.jpg'];
-    var overlayImages = ['image1_overlay.jpg', 'image2_overlay.jpg', 'image3_overlay.jpg', 'image4_overlay.jpg'];
+    // Arrays of image sources for base and overlay images
+    var baseImages = [
+        '/assets/img/left/L1.png',
+        '/assets/img/left/L2.png'
+    ];
+    var overlayImages = [
+        '/assets/img/right/R1.png',
+        '/assets/img/right/R2.png'
+    ];
 
-    function selectRandomImage(imageArray) {
-        var index = Math.floor(Math.random() * imageArray.length);
-        return imageArray[index];
+    // Function to select a random index
+    function selectRandomIndex(imageArray) {
+        return Math.floor(Math.random() * imageArray.length);
     }
 
-    document.getElementById('base-image').src = selectRandomImage(baseImages);
-    document.getElementById('overlay-image').src = selectRandomImage(overlayImages);
+    // Select a random index for both images
+    var index = selectRandomIndex(baseImages); // This index is used for both arrays
 
-    // Slider functionality
+    // Set the source for the base and overlay images using the same index
+    document.getElementById('base-image').src = baseImages[index];
+    document.getElementById('overlay-image').src = overlayImages[index];
+
+    // Reference to the container, overlay, and slider elements
     var container = document.getElementById('image-compare-container');
-    var slider = container.querySelector('.image-compare-slider');
     var overlay = container.querySelector('.image-compare-overlay');
-    var isDragging = false;
+    var slider = container.querySelector('.image-compare-slider');
 
-    var dragStart = function(e) {
-        isDragging = true;
-        // Use preventDefault to avoid selecting text/images on drag
-        e.preventDefault();
-    };
-
-    var dragMove = function(e) {
-        if (!isDragging) return;
+    // Event listener for click events on the container
+    container.addEventListener('click', function(e) {
         var rect = container.getBoundingClientRect();
-        var xPos = e.pageX - rect.left; // Get the x position within the container
-        // Adjust for touch devices
-        if (e.touches) {
-            xPos = e.touches[0].pageX - rect.left;
-        }
+        var xPos = e.clientX - rect.left; // Calculate click position within the container
 
-        // Clamp the position of the slider within the container
-        var position = Math.max(0, Math.min(xPos, rect.width));
-
-        overlay.style.width = position + "px";
-        slider.style.left = position + "px";
-    };
-
-    var dragEnd = function() {
-        isDragging = false;
-    };
-
-    // Attach mouse events
-    slider.addEventListener('mousedown', dragStart);
-    window.addEventListener('mousemove', dragMove);
-    window.addEventListener('mouseup', dragEnd);
-
-    // Attach touch events
-    container.addEventListener('touchstart', dragStart, {passive: true});
-    container.addEventListener('touchmove', dragMove, {passive: true});
-    container.addEventListener('touchend', dragEnd);
+        overlay.style.width = xPos + "px"; // Adjust overlay width
+        slider.style.left = xPos + "px"; // Move slider to click position
+    });
 });
-
 </script>
+
+<div id="image-compare-container" class="image-compare-container">
+    <!-- Placeholder for base image -->
+    <img id="base-image" alt="Base Image" class="image-compare-image">
+    <div class="image-compare-overlay" style="width: 50%;">
+        <!-- Placeholder for overlay image -->
+        <img id="overlay-image" alt="Overlay Image" class="image-compare-image">
+        <div class="image-compare-slider"></div>
+    </div>
+</div>
+
 
 <div id="image-compare-container" class="image-compare-container">
     <img src="/assets/img/left/L2.png" alt="Image 1" class="image-compare-image">

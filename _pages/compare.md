@@ -44,38 +44,43 @@ document.addEventListener('DOMContentLoaded', function() {
     var container = document.getElementById('image-compare-container');
     var slider = container.querySelector('.image-compare-slider');
     var overlay = container.querySelector('.image-compare-overlay');
-    var isDown = false;
+    var isDragging = false;
 
-    var drag = function(e) {
-        if (!isDown) return;
+    var dragStart = function(e) {
+        isDragging = true;
+        // Prevent any text selection during the drag
         e.preventDefault();
-        var rect = container.getBoundingClientRect();
-        var x = (e.pageX || e.touches[0].pageX) - rect.left;
-        var width = Math.min(Math.max(0, x), rect.width);
-        overlay.style.width = width + "px";
-        slider.style.left = width + "px";
     };
 
-    slider.addEventListener('mousedown', function(e) {
-        isDown = true;
-        drag(e);
-    });
+    var dragEnd = function() {
+        isDragging = false;
+    };
 
-    window.addEventListener('mouseup', function() {
-        isDown = false;
-    });
+    var dragMove = function(e) {
+        if (!isDragging) return;
+        e.preventDefault();
+        var rect = container.getBoundingClientRect();
+        var x = 0;
+        // Determine if it's a touch event
+        if (e.type === 'touchmove') {
+            x = e.touches[0].clientX - rect.left;
+        } else {
+            x = e.clientX - rect.left;
+        }
+        var width = Math.max(0, Math.min(x, rect.width));
+        overlay.style.width = width + 'px';
+        slider.style.left = width + 'px';
+    };
 
-    container.addEventListener('mousemove', drag);
-    container.addEventListener('touchstart', function(e) {
-        isDown = true;
-        drag(e);
-    }, {passive: true});
+    // Event listeners for mouse
+    slider.addEventListener('mousedown', dragStart);
+    window.addEventListener('mouseup', dragEnd);
+    window.addEventListener('mousemove', dragMove);
 
-    container.addEventListener('touchend', function() {
-        isDown = false;
-    });
-
-    container.addEventListener('touchmove', drag, {passive: true});
+    // Event listeners for touch
+    container.addEventListener('touchstart', dragStart, { passive: true });
+    container.addEventListener('touchend', dragEnd);
+    container.addEventListener('touchmove', dragMove, { passive: true });
 });
 </script>
 

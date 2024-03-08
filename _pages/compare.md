@@ -80,9 +80,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <div id="image-compare-container" class="image-compare-container">
-    <img src="assets/img/left/L2.png" alt="Image 1" class="image-compare-image">
+    <img src="/assets/img/left/L2.png" alt="Image 1" class="image-compare-image">
     <div class="image-compare-overlay" style="width: 50%;">
-        <img src="assets/img/right/R2.png" alt="Image 2" class="image-compare-image">
+        <img src="/assets/img/right/R2.png" alt="Image 2" class="image-compare-image">
         <div class="image-compare-slider"></div>
     </div>
 </div>

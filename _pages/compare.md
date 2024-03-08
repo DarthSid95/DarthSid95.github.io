@@ -12,31 +12,32 @@ nav_order: 8
     position: relative;
     width: 100%;
     max-width: 500px; /* Adjust as needed */
+    overflow: hidden; /* Ensure nothing spills outside the container */
 }
 
 .image-compare-image {
+    height: 100%; /* Ensure images always take up 100% of the container's height */
+    width: auto; /* Adjust width automatically to maintain aspect ratio */
     display: block;
-    width: 100%;
 }
 
 .image-compare-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%; /* Initial overlay width to show both images */
-    height: 100%;
-    overflow: hidden;
+    height: 100%; /* Overlay takes full height of the container */
+    overflow: hidden; /* Crop the overlay image based on the container's width */
 }
 
 .image-compare-slider {
     position: absolute;
     z-index: 9;
-    cursor: pointer; /* Change to pointer to indicate clickable */
-    width: 10px; /* Adjust for visibility */
+    cursor: pointer;
+    width: 10px;
     height: 100%;
-    background-color: #2196F3; /* Slider color */
+    background-color: #2196F3;
     left: 50%; /* Initial position */
-    box-shadow: 0 0 5px #000; /* Improved visibility */
+    box-shadow: 0 0 5px #000;
 }
 </style>
 
@@ -69,12 +70,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var overlay = container.querySelector('.image-compare-overlay');
     var slider = container.querySelector('.image-compare-slider');
 
-    // Event listener for click events on the container
     container.addEventListener('click', function(e) {
         var rect = container.getBoundingClientRect();
         var xPos = e.clientX - rect.left; // Calculate click position within the container
 
-        overlay.style.width = xPos + "px"; // Adjust overlay width
+        overlay.style.width = xPos + "px"; // Adjust overlay width, cropping the image
         slider.style.left = xPos + "px"; // Move slider to click position
     });
 });
@@ -89,12 +89,4 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="image-compare-slider"></div>
     </div>
 </div>
-
-
-<div id="image-compare-container" class="image-compare-container">
-    <img src="/assets/img/left/L2.png" alt="Image 1" class="image-compare-image">
-    <div class="image-compare-overlay" style="width: 50%;">
-        <img src="/assets/img/right/R2.png" alt="Image 2" class="image-compare-image">
-        <div class="image-compare-slider"></div>
-    </div>
 </div>

@@ -37,7 +37,7 @@ nav_order: 8
     width: 10px;
     height: 100%;
     background-color: #2196F3;
-    left: 50%; /* Initial position */
+    left: 256px; /* Initial position */
     box-shadow: 0 0 5px #000;
 }
 

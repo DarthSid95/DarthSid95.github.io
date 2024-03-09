@@ -144,7 +144,7 @@
                         RDSE @ Microsoft Research, Bangalore <br>
                         PhD @ IISc, Bangalore
                       </h2> <br>
-                      <h3> A Fiery Passion for <div id="typewriter"><span id="cursor">|</span></div><h3>
+                      <h3> <div id="static-text">A Fiery Passion for</div> <div id="typewriter"><span id="cursor">|</span></div><h3>
                     </div>
                 </div>
             </div>
@@ -152,11 +152,21 @@
     </div>
     
     <style>
-
+    #static-text {
+      font-family: monospace;
+      display: inline; /* Adjust as needed */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
     #typewriter {
       font-family: monospace;
       white-space: nowrap;
       overflow: hidden;
+      display: inline;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
     #cursor {

@@ -144,11 +144,8 @@
                         RDSE @ Microsoft Research, Bangalore <br>
                         PhD @ IISc, Bangalore
                       </h2>
-                      <div id="typewriter"></div>
+                      A Fiery Passion for <div id="typewriter"></div>
                       <h1>
-                        <a href="" class="typewrite" data-period="2000" data-type='[ "Signal Processing.", "Generative Modeling.", "Machine Learning."]'>
-                          <span class="wrap"></span>
-                        </a>
                       </h1>
                     </div>
                 </div>
@@ -160,7 +157,7 @@
 
     #typewriter {
       font-family: monospace;
-      border-right: .1em solid black; /* Simulates the cursor */
+      border-right: .1em solid white; /* Simulates the cursor */
       white-space: nowrap;
       overflow: hidden;
     }
@@ -260,9 +257,9 @@
   let currentPhrase = 0;
   let currentLetter = 0;
   let isDeleting = false;
-  const typingSpeed = 150;
-  const deletingSpeed = 75;
-  const waitBeforeDelete = 2000; // Time to wait before starting to delete the text
+  const typingSpeed = 200;
+  const deletingSpeed = 150;
+  const waitBeforeDelete = 1200; // Time to wait before starting to delete the text
 
   function typeWriter() {
     const displayedText = phrases[currentPhrase].substring(0, currentLetter);

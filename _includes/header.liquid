@@ -144,7 +144,7 @@
                         RDSE @ Microsoft Research, Bangalore <br>
                         PhD @ IISc, Bangalore
                       </h2> <br>
-                      <h3> A Fiery Passion for <div id="typewriter"></div></div><h3>
+                      <h3> A Fiery Passion for <div id="typewriter"><span id="cursor">|</span></div><h3>
                     </div>
                 </div>
             </div>
@@ -157,18 +157,15 @@
       font-family: monospace;
       white-space: nowrap;
       overflow: hidden;
-      border-right: .1em solid white; /* Simulates the cursor */
     }
 
-    /* Cursor animation */
+    #cursor {
+      font-weight: bold;
+      animation: blink 0.75s step-end infinite;
+    }
+
     @keyframes blink {
-      from, to { border-color: transparent }
-      50% { border-color: whitesmoke; }
-    }
-
-    /* Apply the animation to the typewriter element */
-    #typewriter {
-      animation: blink .75s step-end infinite;
+      50% { opacity: 0; }
     }
     .hero {
         position: relative;
@@ -281,10 +278,12 @@
   const typingSpeed = 200;
   const deletingSpeed = 150;
   const waitBeforeDelete = 1200; // Time to wait before starting to delete the text
-
+  
+  
   function typeWriter() {
+    const cursor = document.getElementById("cursor");
     const displayedText = phrases[currentPhrase].substring(0, currentLetter);
-    document.getElementById("typewriter").textContent = displayedText;
+    document.getElementById("typewriter").innerHTML = displayedText + cursor.outerHTML;
 
     if (!isDeleting) {
       if (currentLetter < phrases[currentPhrase].length) {
@@ -305,6 +304,7 @@
       }
     }
   }
+
 
   // Start the animation
   typeWriter();

@@ -145,7 +145,7 @@
                         PhD @ IISc, Bangalore
                       </h2> <br>
                       <div id="Centwrapper">
-                      <div id="static-text">A Fiery Passion for</div> <div id="typewriter"><span id="cursor">|</span></div>
+                      <div id="static-text">A Fiery Passion for </div> <div id="typewriter"><span id="cursor">|</span></div>
                       </div>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
       display: flex; /* Use flexbox for layout */
       justify-content: center; /* Center flex items horizontally */
       align-items: center; /* Center flex items vertically */
-      height: 100px; /* Adjust height as necessary */
+      height: 40px; /* Adjust height as necessary */
     }
     #static-text {
       font-family: monospace;
@@ -167,6 +167,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      font-size: 20px;
     }
     #typewriter {
       font-family: monospace;
@@ -176,6 +177,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      font-size: 20px;
     }
 
     #cursor {
@@ -280,13 +282,13 @@
     </style>
 
   <script type="text/javascript">
-  const phrases = ["Signal Processing.", "Machine Learning.", "Generative AI", "Information Retrieval."];
+  const phrases = ["Signal Processing.", "Machine Learning.", "Generative AI.", "Information Retrieval.", "Generative Adversarial Networks.", "Langevin Diffusion.", "Extreme Classification.", "Variational Calculus." ];
   let currentPhrase = 0;
   let currentLetter = 0;
   let isDeleting = false;
-  const typingSpeed = 200;
-  const deletingSpeed = 150;
-  const waitBeforeDelete = 1200; // Time to wait before starting to delete the text
+  const typingSpeed = 400;
+  const deletingSpeed = 250;
+  const waitBeforeDelete = 2000; // Time to wait before starting to delete the text
   
   
   function typeWriter() {

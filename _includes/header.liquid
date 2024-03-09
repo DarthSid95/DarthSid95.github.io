@@ -143,10 +143,8 @@
                       <h2>
                         RDSE @ Microsoft Research, Bangalore <br>
                         PhD @ IISc, Bangalore
-                      </h2>
-                      A Fiery Passion for <div id="typewriter"></div>
-                      <h1>
-                      </h1>
+                      </h2> <br>
+                      <h3> A Fiery Passion for <div id="typewriter"></div></div><h3>
                     </div>
                 </div>
             </div>
@@ -157,9 +155,20 @@
 
     #typewriter {
       font-family: monospace;
-      border-right: .1em solid white; /* Simulates the cursor */
       white-space: nowrap;
       overflow: hidden;
+      border-right: .1em solid white; /* Simulates the cursor */
+    }
+
+    /* Cursor animation */
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: whitesmoke; }
+    }
+
+    /* Apply the animation to the typewriter element */
+    #typewriter {
+      animation: blink .75s step-end infinite;
     }
     .hero {
         position: relative;
@@ -222,6 +231,18 @@
         font-size: 35px;
         font-weight: 600;
     }
+
+    .hero .hero-text h3 {
+      font-family: monospace;
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+      height: 35px;
+      color: #ffffff;
+      font-size: 35px;
+      font-weight: 600;
+    }
+
 
     .hero .hero-text .typed-text {
         display: none;

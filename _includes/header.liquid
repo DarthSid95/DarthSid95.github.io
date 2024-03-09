@@ -144,7 +144,9 @@
                         RDSE @ Microsoft Research, Bangalore <br>
                         PhD @ IISc, Bangalore
                       </h2> <br>
-                      <h3> <div class="row align-items-center" id="static-text">A Fiery Passion for</div> <div class="row align-items-center" id="typewriter"><span id="cursor">|</span></div><h3>
+                      <div id="Centwrapper">
+                      <div id="static-text">A Fiery Passion for</div> <div id="typewriter"><span id="cursor">|</span></div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -152,6 +154,13 @@
     </div>
     
     <style>
+    #Centwrapper {
+      text-align: center; /* Centers inline content horizontally */
+      display: flex; /* Use flexbox for layout */
+      justify-content: center; /* Center flex items horizontally */
+      align-items: center; /* Center flex items vertically */
+      height: 100px; /* Adjust height as necessary */
+    }
     #static-text {
       font-family: monospace;
       display: inline; /* Adjust as needed */
@@ -239,16 +248,6 @@
         font-weight: 600;
     }
 
-    .hero .hero-text h3 {
-      font-family: monospace;
-      display: inline-block;
-      text-align: center;
-      margin: 0;
-      height: 35px;
-      color: #ffffff;
-      font-size: 18px;
-      font-weight: 600;
-    }
 
 
     .hero .hero-text .typed-text {

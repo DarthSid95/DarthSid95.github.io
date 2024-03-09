@@ -10,7 +10,7 @@ nav_order: 8
 <style>
 .image-comparison-wrapper {
     position: relative;
-    display: inline-flex; /* Change to inline-flex to wrap content more tightly */
+    display: flex; /* Change to inline-flex to wrap content more tightly */
     flex-direction: column;
     align-items: center; /* Center children horizontally */
     justify-content: center; /* Center the entire wrapper vertically, if you're using it for full page */
@@ -59,36 +59,46 @@ nav_order: 8
     box-shadow: 0 0 5px #000;
 }
 
-#random-image, .arrow-button {
+/* Style adjustments for arrow buttons to overlap the image edges */
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(0%); /* Adjust translation if needed */
     cursor: pointer;
-    padding: 10px; /* Adjust padding to make the buttons more circular */
-    margin: 10px 5px; /* Reduce horizontal margin to bring arrows closer */
-    background-color: rgba(33, 150, 243, 0.7); /* Semi-transparent blue */
+    padding: 10px;
+    background-color: rgba(33, 150, 243, 0.7); /* Adjust color/transparency as desired */
     color: white;
     border: none;
-    border-radius: 50%; /* Circular shape */
-    font-size: 16px;
-    width: 40px; /* Ensure a more circular shape */
-    height: 40px; /* Ensure a more circular shape */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.arrow-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    z-index: 5; /* Ensure they are above the image */
 }
 
 #arrow-left {
-    left: -25px; /* Adjust to bring closer to the image */
+    left: 0; /* Adjust for overlap */
 }
 
 #arrow-right {
-    right: -25px; /* Adjust to bring closer to the image */
+    right: 0; /* Adjust for overlap */
 }
+
+/* Reverting "Random Image" button style */
+#random-image {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #2196F3; /* Solid color for a standard look */
+    color: white;
+    border: 1px solid #ddd; /* Optional: adds a slight border */
+    border-radius: 4px; /* Rounded corners for a classic button look */
+    font-size: 16px;
+    margin: 10px 0; /* Space above the button */
+}
+
 </style>
 
 <script type="text/javascript">
@@ -178,6 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ]
 
     let currentIndex = 0; // Start at the first image
+    let PageLoad = -1
 
     function updateImageAndCaption() {
         document.getElementById('base-image').src = baseImages[currentIndex];
@@ -202,8 +213,9 @@ document.addEventListener('DOMContentLoaded', function() {
         updateImageAndCaption();
     });
 
-    if (currentIndex === 0) {
-    updateImageAndCaption();
+    if (PageLoad = -1) {
+        let PageLoad = 0
+        updateImageAndCaption();
     }
 
     // Implementing the click/touch interface for comparison

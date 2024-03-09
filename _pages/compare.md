@@ -9,7 +9,8 @@ nav_order: 8
 
 <style>
 .image-comparison-wrapper {
-    display: flex;
+    position: relative;
+    display: inline-flex; /* Change to inline-flex to wrap content more tightly */
     flex-direction: column;
     align-items: center; /* Center children horizontally */
     justify-content: center; /* Center the entire wrapper vertically, if you're using it for full page */
@@ -60,13 +61,19 @@ nav_order: 8
 
 #random-image, .arrow-button {
     cursor: pointer;
-    padding: 10px 15px;
-    margin: 10px;
-    background-color: #2196F3;
+    padding: 10px; /* Adjust padding to make the buttons more circular */
+    margin: 10px 5px; /* Reduce horizontal margin to bring arrows closer */
+    background-color: rgba(33, 150, 243, 0.7); /* Semi-transparent blue */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%; /* Circular shape */
     font-size: 16px;
+    width: 40px; /* Ensure a more circular shape */
+    height: 40px; /* Ensure a more circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .arrow-button {
@@ -76,11 +83,11 @@ nav_order: 8
 }
 
 #arrow-left {
-    left: 10px;
+    left: -25px; /* Adjust to bring closer to the image */
 }
 
 #arrow-right {
-    right: 10px;
+    right: -25px; /* Adjust to bring closer to the image */
 }
 </style>
 
@@ -195,6 +202,10 @@ document.addEventListener('DOMContentLoaded', function() {
         updateImageAndCaption();
     });
 
+    if (currentIndex === 0) {
+    updateImageAndCaption();
+    }
+
     // Implementing the click/touch interface for comparison
     const container = document.getElementById('image-compare-container');
     container.addEventListener('click', function(e) {
@@ -205,6 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const overlayWidth = Math.max(0, Math.min(xPos, width));
         container.querySelector('.image-compare-overlay').style.width = overlayWidth + 'px';
     });
+
 });
 
 

@@ -15,7 +15,7 @@ nav_order: 8
     align-items: center; /* Center children horizontally */
     justify-content: center; /* Center the entire wrapper vertically, if you're using it for full page */
     min-height: 100vh; /* Optional: For full-page height alignment */
-    padding: 20px; /* Adds some space around the content */
+    padding: 10px; /* Adds some space around the content */
 }
 
 .image-caption {
@@ -63,10 +63,10 @@ nav_order: 8
 .arrow-button {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) translateX(0%); /* Adjust translation if needed */
+    transform: translateY(-50%) translateX(10%); /* Adjust translation if needed */
     cursor: pointer;
     padding: 10px;
-    background-color: rgba(33, 150, 243, 0.7); /* Adjust color/transparency as desired */
+    background-color: rgba(33, 33, 33, 0.7); /* Adjust color/transparency as desired */
     color: white;
     border: none;
     border-radius: 50%;

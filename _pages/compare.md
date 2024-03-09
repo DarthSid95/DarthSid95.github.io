@@ -6,6 +6,7 @@ description: <h1> Me vs. The Machine </h1> <br> The image juxtaposes my photogra
 nav: true
 nav_order: 8
 ---
+
 <style>
 .image-comparison-wrapper {
     position: relative;

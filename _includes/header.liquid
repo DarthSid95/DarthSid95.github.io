@@ -144,6 +144,7 @@
                         RDSE @ Microsoft Research, Bangalore <br>
                         PhD @ IISc, Bangalore
                       </h2>
+                      <div id="typewriter"></div>
                       <h1>
                         <a href="" class="typewrite" data-period="2000" data-type='[ "Signal Processing.", "Generative Modeling.", "Machine Learning."]'>
                           <span class="wrap"></span>
@@ -156,6 +157,13 @@
     </div>
     
     <style>
+
+    #typewriter {
+      font-family: monospace;
+      border-right: .1em solid black; /* Simulates the cursor */
+      white-space: nowrap;
+      overflow: hidden;
+    }
     .hero {
         position: relative;
         width: 100%;
@@ -246,6 +254,43 @@
         margin-right: 10px;
     }
     </style>
+
+  <script type="text/javascript">
+  const phrases = ["Signal Processing.", "Machine Learning.", "Generative AI", "Information Retrieval."];
+  let currentPhrase = 0;
+  let currentLetter = 0;
+  let isDeleting = false;
+  const typingSpeed = 150;
+  const deletingSpeed = 75;
+  const waitBeforeDelete = 2000; // Time to wait before starting to delete the text
+
+  function typeWriter() {
+    const displayedText = phrases[currentPhrase].substring(0, currentLetter);
+    document.getElementById("typewriter").textContent = displayedText;
+
+    if (!isDeleting) {
+      if (currentLetter < phrases[currentPhrase].length) {
+        currentLetter++;
+        setTimeout(typeWriter, typingSpeed);
+      } else {
+        setTimeout(typeWriter, waitBeforeDelete);
+        isDeleting = true;
+      }
+    } else {
+      if (currentLetter > 0) {
+        currentLetter--;
+        setTimeout(typeWriter, deletingSpeed);
+      } else {
+        isDeleting = false;
+        currentPhrase = (currentPhrase + 1) % phrases.length;
+        setTimeout(typeWriter, typingSpeed);
+      }
+    }
+  }
+
+  // Start the animation
+  typeWriter();
+  </script>
   {% endif %}
 
 

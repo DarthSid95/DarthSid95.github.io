@@ -2,7 +2,7 @@
 layout: page
 title: Others
 nav: true
-nav_order: 9
+nav_order: 8
 dropdown: true
 children:
   - title: Teaching
@@ -12,7 +12,4 @@ children:
     permalink: /projects/
   - title: Repositories
     permalink: /repositories/
-  - title: divider
-  - title: Blog
-    permalink: /blog/
 ---

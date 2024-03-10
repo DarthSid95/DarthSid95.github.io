@@ -6,12 +6,6 @@ nav: true
 nav_order: 4
 ---
 <style>
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -109,7 +103,7 @@ body, html {
             <p>This is some text about the news article. This can be expanded to show more details.</p>
         </div>
     </div>
-    {% for item in news limit: news_limit %}
+    {% for item in site.news limit: news_limit %}
         <div class="container right">
             <div class="content">
                 <h2>2023</h2>

@@ -5,79 +5,100 @@ permalink: /news/
 nav: true
 nav_order: 4
 ---
-
-{% include news.liquid %}
-
 <style>
-    .timeline {
-        position: relative;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-    .timeline::after {
-        content: '';
-        position: absolute;
-        width: 6px;
-        background-color: #ddd;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -3px;
-    }
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto;
+}
 
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px; /* Slimmer line for a more refined look */
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add shadow for depth */
+}
+
+/* Adjust the position of the content boxes */
+.left .content {
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.right .content {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Position the timeline dots correctly */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 4px solid #ddd;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.left::after {
+    left: 50%;
+}
+
+.right::after {
+    left: 50%;
+}
+
+@media screen and (max-width: 600px) {
     .container {
-        padding: 10px 40px;
-        position: relative;
-        background-color: inherit;
-        width: 50%;
+        width: 100%;
+        padding-left: 70px; /* Adjust as needed for smaller screens */
+        padding-right: 25px; /* Adjust as needed for smaller screens */
     }
-
-    .left {
+    .left::after, .right::after {
         left: 0;
     }
-
-    .right {
-        left: 50%;
+    .left .content, .right .content {
+        margin-left: 0;
+        margin-right: 0;
     }
-
-    .content {
-        padding: 20px 30px;
-        background-color: white;
-        position: relative;
-        border-radius: 6px;
-    }
-
-    .left .content {
-        margin-left: 15px;
-    }
-
-    .right .content {
-        margin-right: 15px;
-    }
-
-    .container::after {
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        right: -17px;
-        background-color: white;
-        border: 4px solid #ddd;
-        top: 15px;
-        border-radius: 50%;
-        z-index: 1;
-    }
-
-    .right::after {
-        left: -17px;
-    }
-
-    /* Add shadows to create the "card" effect */
-    .content {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
+}
     /* Add more styling according to your preference */
 </style>
 
@@ -109,3 +130,6 @@ nav_order: 4
     });
 });
 </script>
+
+
+{% include news.liquid %}

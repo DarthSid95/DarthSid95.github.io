@@ -109,13 +109,13 @@ body, html {
             <p>This is some text about the news article. This can be expanded to show more details.</p>
         </div>
     </div>
-    <div class="container right">
-        <div class="content">
-            <h2>2023</h2>
-            <p>This is some text about the news article. This can be expanded to show more details.</p>
-        </div>
-    </div>
-    <!-- Repeat the container divs for each news article -->
+    {% for item in news limit: news_limit %}
+        <div class="container right">
+            <div class="content">
+                <h2>2023</h2>
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            </div>
+    {% endfor %}
 </div>
 
 <script type='text/javascript'>

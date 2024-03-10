@@ -5,6 +5,7 @@ permalink: /news/
 nav: true
 nav_order: 4
 ---
+
 {% include news.liquid %}
 
 <style>
@@ -110,4 +111,3 @@ nav_order: 4
 </script>
 </body>
 </html>
-

@@ -129,122 +129,125 @@
     </progress>
   {% endif %}
 
-
   {% if page.permalink == '/' %}
     <script src="/assets/js/typewriter.js"></script>
 
     <div class="hero" id="home">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="hero-content">
-                    <div class="hero-text">
-                      <p>Hi! I'm</p>
-                      <h1>Siddarth Asokan. </h1>
-                      <h2>
-                        RDSE @ Microsoft Research, Bangalore <br>
-                        PhD @ IISc, Bangalore
-                      </h2> <br>
-                      <div id="Centwrapper">
-                      <div id="static-text">A Fiery Passion for&nbsp;</div> <div id="typewriter"><span id="cursor">|</span></div>
-                      </div>
-                    </div>
-                </div>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="hero-content">
+            <div class="hero-text">
+              <p>Hi! I'm</p>
+              <h1>Siddarth Asokan.</h1>
+              <h2>
+                RDSE @ Microsoft Research, Bangalore <br>
+                PhD @ IISc, Bangalore
+              </h2>
+              <br>
+              <div id="Centwrapper">
+                <div id="static-text">A Fiery Passion for&nbsp;</div>
+                <div id="typewriter"><span id="cursor">|</span></div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <style>
-    #Centwrapper {
-      position: relative;
-      text-align: center; /* Centers inline content horizontally */
-      display: flex; /* Use flexbox for layout */
-      justify-content: center; /* Center flex items horizontally */
-      align-items: center; /* Center flex items vertically */
-      height: 40px; /* Adjust height as necessary */
-      color: white;
-    }
-    #static-text {
-      font-family: monospace;
-      display: inline; /* Adjust as needed */
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-size: 18px;
-      color: white;
-    }
-    #typewriter {
-      font-family: monospace;
-      white-space: nowrap;
-      overflow: hidden;
-      display: inline;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-size: 18px;
-      color: white;
-    }
+      #Centwrapper {
+        position: relative;
+        text-align: center; /* Centers inline content horizontally */
+        display: flex; /* Use flexbox for layout */
+        justify-content: center; /* Center flex items horizontally */
+        align-items: center; /* Center flex items vertically */
+        height: 40px; /* Adjust height as necessary */
+        color: white;
+      }
+      #static-text {
+        font-family: monospace;
+        display: inline; /* Adjust as needed */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+      }
+      #typewriter {
+        font-family: monospace;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+      }
 
-    #cursor {
-      font-weight: bold;
-      animation: blink 0.75s step-end infinite;
-    }
+      #cursor {
+        font-weight: bold;
+        animation: blink 0.75s step-end infinite;
+      }
 
-    @keyframes blink {
-      50% { opacity: 0; }
-    }
-    .hero {
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+      .hero {
         position: relative;
         width: 100%;
         margin-bottom: 45px;
         padding: 250px 0 250px 0;
         overflow: hidden;
-        background: linear-gradient(rgba(10,10,10, .25), rgba(20,20,20, .25)), url(../assets/img/BannerPic3.jpg);
+        background: linear-gradient(rgba(10, 10, 10, 0.25), rgba(20, 20, 20, 0.25)), url(../assets/img/BannerPic3.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    }
+      }
 
-    .hero .container-fluid {
+      .hero .container-fluid {
         padding: 0;
-    }
+      }
 
-    .hero .hero-image {
+      .hero .hero-image {
         position: relative;
         text-align: right;
         padding-right: 0px;
-    }
+      }
 
-    .hero .hero-image img {
+      .hero .hero-image img {
         max-width: 100%;
         max-height: 500%;
-    }
+      }
 
-    .hero .hero-content {
+      .hero .hero-content {
         position: relative;
         padding-left: 25px;
         display: flex;
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-    }
+      }
 
-    .hero .hero-text p {
+      .hero .hero-text p {
         color: #ffffff;
         font-size: 25px;
         font-weight: 600;
         margin-bottom: 15px;
-    }
+      }
 
-    .hero .hero-text h1 {
+      .hero .hero-text h1 {
         color: #ffffff;
         text-align: center;
         font-size: 60px;
         font-weight: 700;
         letter-spacing: 3px;
         margin-bottom: 15px;
-    }
+      }
 
-    .hero .hero-text h2 {
+      .hero .hero-text h2 {
         display: inline-block;
         text-align: center;
         margin: 0;
@@ -252,79 +255,82 @@
         color: #ffffff;
         font-size: 35px;
         font-weight: 600;
-    }
+      }
 
-
-
-    .hero .hero-text .typed-text {
+      .hero .hero-text .typed-text {
         display: none;
-    }
+      }
 
-    .hero .hero-text .typed-cursor {
+      .hero .hero-text .typed-cursor {
         font-size: 35px;
         font-weight: 300;
         color: #ffffff;
-    }
+      }
 
-    .hero .hero-btn .btn {
+      .hero .hero-btn .btn {
         margin-top: 35px;
         color: #6723ef;
         background: #ffffff;
         box-shadow: inset 0 0 0 50px #ffffff;
-    }
+      }
 
-    .hero .hero-btn .btn:hover {
+      .hero .hero-btn .btn:hover {
         color: #ffffff;
         background: transparent;
         box-shadow: inset 0 0 0 0 #ffffff;
         border-color: #ffffff;
-    }
+      }
 
-    .hero .hero-btn .btn:first-child {
+      .hero .hero-btn .btn:first-child {
         margin-right: 10px;
-    }
+      }
     </style>
 
-  <script type="text/javascript">
-  const phrases = [" Signal Processing.", " Variational Calculus.", " Machine Learning.", " Generative AI.", " GANs.", " Langevin Diffusion.",  " Information Retrieval.", " Extreme Classification.",  ];
-  let currentPhrase = 0;
-  let currentLetter = 0;
-  let isDeleting = false;
-  const typingSpeed = 75;
-  const deletingSpeed = 75;
-  const waitBeforeDelete = 3000; // Time to wait before starting to delete the text
-  
-  
-  function typeWriter() {
-    const cursor = document.getElementById("cursor");
-    const displayedText = phrases[currentPhrase].substring(0, currentLetter);
-    document.getElementById("typewriter").innerHTML = displayedText + cursor.outerHTML;
+    <script type="text/javascript">
+      const phrases = [
+        ' Signal Processing.',
+        ' Variational Calculus.',
+        ' Machine Learning.',
+        ' Generative AI.',
+        ' GANs.',
+        ' Langevin Diffusion.',
+        ' Information Retrieval.',
+        ' Extreme Classification.',
+      ];
+      let currentPhrase = 0;
+      let currentLetter = 0;
+      let isDeleting = false;
+      const typingSpeed = 75;
+      const deletingSpeed = 75;
+      const waitBeforeDelete = 3000; // Time to wait before starting to delete the text
 
-    if (!isDeleting) {
-      if (currentLetter < phrases[currentPhrase].length) {
-        currentLetter++;
-        setTimeout(typeWriter, typingSpeed);
-      } else {
-        setTimeout(typeWriter, waitBeforeDelete);
-        isDeleting = true;
+      function typeWriter() {
+        const cursor = document.getElementById('cursor');
+        const displayedText = phrases[currentPhrase].substring(0, currentLetter);
+        document.getElementById('typewriter').innerHTML = displayedText + cursor.outerHTML;
+
+        if (!isDeleting) {
+          if (currentLetter < phrases[currentPhrase].length) {
+            currentLetter++;
+            setTimeout(typeWriter, typingSpeed);
+          } else {
+            setTimeout(typeWriter, waitBeforeDelete);
+            isDeleting = true;
+          }
+        } else {
+          if (currentLetter > 0) {
+            currentLetter--;
+            setTimeout(typeWriter, deletingSpeed);
+          } else {
+            isDeleting = false;
+            currentPhrase = (currentPhrase + 1) % phrases.length;
+            setTimeout(typeWriter, typingSpeed);
+          }
+        }
       }
-    } else {
-      if (currentLetter > 0) {
-        currentLetter--;
-        setTimeout(typeWriter, deletingSpeed);
-      } else {
-        isDeleting = false;
-        currentPhrase = (currentPhrase + 1) % phrases.length;
-        setTimeout(typeWriter, typingSpeed);
-      }
-    }
-  }
 
-
-  // Start the animation
-  typeWriter();
-  </script>
+      // Start the animation
+      typeWriter();
+    </script>
   {% endif %}
-
-
 </header>

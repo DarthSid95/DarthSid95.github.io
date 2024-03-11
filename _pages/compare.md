@@ -24,7 +24,7 @@ nav_order: 8
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 16px;
-    margin-bottom: 20px; /* Space between caption and image comparison tool */
+    margin-bottom: 5px; /* Space between caption and image comparison tool */
 }
 
 .image-compare-container {

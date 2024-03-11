@@ -75,6 +75,7 @@ nav_order: 4
 }
 
 .news-left, .news-right {
+    color: black;
     clear: both;
 }
 

@@ -97,7 +97,7 @@ nav_order: 4
     /* Add more styling according to your preference */
 </style>
 
-<div class="timeline">
+<!-- <div class="timeline">
     <div class="container left">
         <div class="content">
             <h2>2024</h2>
@@ -112,19 +112,32 @@ nav_order: 4
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
             </div>
     {% endfor %}
-</div>
+</div> -->
+
+<div id="timeline"></div>
 
 <script type='text/javascript'>
-    document.addEventListener('DOMContentLoaded', (event) => {
-    const expandables = document.querySelectorAll('.content');
-    expandables.forEach((item) => {
-        item.addEventListener('click', function() {
-            // Toggle expanded class to change height or show more content
-            this.classList.toggle('expanded');
-            // You might want to change this to adjust the display of expanded content
+    var newsData = {{ site.news | jsonify }};
+    document.addEventListener('DOMContentLoaded', () => {
+        const timeline = document.getElementById('timeline');
+        
+        // Use the `newsData` variable directly in your JavaScript
+        newsData.forEach(item => {
+            const year = parseInt(item.date.split('-')[0]); // Extract the year
+            const isEvenYear = year % 2 === 0;
+
+            const timelineItem = document.createElement('div');
+            timelineItem.classList.add('timeline-item', isEvenYear ? 'right' : 'left');
+            
+            const timelineContent = document.createElement('div');
+            timelineContent.classList.add('timeline-content');
+            
+            timelineContent.innerHTML = `<h3>${item.date}</h3><p>${item.content}</p>`;
+            
+            timelineItem.appendChild(timelineContent);
+            timeline.appendChild(timelineItem);
         });
     });
-});
 </script>
 
 

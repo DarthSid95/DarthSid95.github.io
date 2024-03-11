@@ -131,14 +131,21 @@ nav_order: 4
 <script type='text/javascript'>
     document.addEventListener("DOMContentLoaded", function() {
 
-    // Attach the event listener to a static parent element
+    // Event delegation on the #news-timeline for dynamic content
     document.getElementById('news-timeline').addEventListener('click', function(event) {
-        // Check if the clicked element or its parent has the class 'expand-arrow'
-        let target = event.target;
-        if (target.classList.contains('expand-arrow') || target.parentElement.classList.contains('expand-arrow')) {
-            // Find the closest parent '.news-content' to toggle
-            const newsContent = target.closest('.news-content');
-            newsContent.classList.toggle('expanded');
+        // Check if the clicked element is the expand-arrow or its descendant
+        if (event.target.closest('.expand-arrow')) {
+            // Find the .content-full sibling of the clicked arrow
+            const contentFull = event.target.closest('.news-content').querySelector('.content-full');
+            
+            // Toggle visibility based on the current display style
+            if (contentFull.style.display === 'none' || contentFull.style.display === '') {
+                contentFull.style.display = 'block'; // Show the full content
+                event.target.innerText = '▲'; // Optional: change the arrow direction
+            } else {
+                contentFull.style.display = 'none'; // Hide the full content
+                event.target.innerText = '▼'; // Optional: change the arrow direction back
+            }
         }
     });
 

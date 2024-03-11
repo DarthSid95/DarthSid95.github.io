@@ -26,7 +26,7 @@ nav_order: 4
 .news-item {
     position: relative;
     display: flex;
-    justify-content: center; /* Center content */
+    justify-content: left; /* Center content */
     width: 40%;
     margin: 20px auto; /* Auto margins for horizontal centering */
     padding: 10px;

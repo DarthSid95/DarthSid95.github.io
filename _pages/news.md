@@ -51,7 +51,7 @@ nav_order: 4
 #news-timeline {
     position: relative;
     width: 100%;
-    min-height: 500px; /* Ensure container has a minimum height */
+    min-height: 1500px; /* Ensure container has a minimum height */
     padding: 20px 0;
 }
 
@@ -90,11 +90,11 @@ nav_order: 4
 }
 
 .news-left::before {
-    right: 100%;
+    left: 100%;
 }
 
 .news-right::before {
-    left: 100%;
+    right: 100%;
 }
 
 .news-left {

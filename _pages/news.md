@@ -5,6 +5,7 @@ permalink: /news/
 nav: false
 nav_order: 4
 ---
+
 <style>
 #news-timeline {
     position: relative;
@@ -47,6 +48,7 @@ nav_order: 4
 </style>
 
 {% assign news = site.news | reverse %}
+
 <div id="news-timeline">
     <div class="timeline-spine"></div> <!-- Central spine of the timeline -->
     <!-- Placeholder loop: Replace with your template engine's loop syntax -->
@@ -112,6 +114,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
-
 
 {% include news.liquid %}

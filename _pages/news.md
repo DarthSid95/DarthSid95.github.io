@@ -6,7 +6,7 @@ nav: false
 nav_order: 4
 ---
 
-<style>
+<!-- <style>
 #news-timeline {
     position: relative;
     width: 100%;
@@ -45,6 +45,47 @@ nav_order: 4
     background-color: #333;
     z-index: 0; /* Ensure connectors don't overlap news items */
 }
+</style> -->
+
+<style>
+    #news-timeline {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.timeline-spine {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #333;
+}
+
+.news-item {
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Positioning news items */
+.news-left {
+    float: left;
+    clear: both;
+    margin-right: 10%;
+}
+
+.news-right {
+    float: right;
+    clear: both;
+    margin-left: 10%;
+}
+
+.news-content {
+    background-color: #fff;
+    padding: 10px;
+}
 </style>
 
 {% assign news = site.news | reverse %}
@@ -53,7 +94,7 @@ nav_order: 4
     <div class="timeline-spine"></div> <!-- Central spine of the timeline -->
     <!-- Placeholder loop: Replace with your template engine's loop syntax -->
     {% for item in news %}
-    <div class="news-item" data-year="{{ item.date | date: '%Y' }}">
+    <div class="news-item" data-date="{{ item.date }}">
         <div class="news-content">
         <h2 color='black'> {{ item.date | date: '%Y' }} </h2> <br>
         <h4 color='black'> {{ item.date | date: '%b %d' }} </h4>:&nbsp;{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
@@ -62,7 +103,7 @@ nav_order: 4
     {% endfor %}
 </div>
 
-<script type='text/javascript'>
+<!-- <script type='text/javascript'>
 document.addEventListener("DOMContentLoaded", function() {
     var newsItems = document.querySelectorAll('.news-item');
 
@@ -79,6 +120,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-</script> 
+</script>  -->
+
+<script type='text/javascript'>
+    document.addEventListener("DOMContentLoaded", function() {
+    const newsItems = document.querySelectorAll('.news-item');
+
+    newsItems.forEach(item => {
+        const dateStr = item.getAttribute('data-date');
+        const year = new Date(dateStr).getFullYear();
+
+        if (year % 2 === 0) {
+            // Even year, goes to the left
+            item.classList.add('news-left');
+        } else {
+            // Odd year, goes to the right
+            item.classList.add('news-right');
+        }
+    });
+});
+</script>
 
 {% include news.liquid %}

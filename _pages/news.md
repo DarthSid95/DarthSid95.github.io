@@ -137,7 +137,9 @@ nav_order: 4
         if (event.target.closest('.expand-arrow')) {
             // Find the .content-full sibling of the clicked arrow
             const contentFull = event.target.closest('.news-content').querySelector('.content-full');
-            let newBlockHeight = -item.offsetHeight;
+            const newsContent = event.target.closest('.news-content');
+            const contentPrev = newsContent.querySelector('.content-preview');
+
             // Toggle visibility based on the current display style
             if (contentFull.style.display === 'none' || contentFull.style.display === '') {
                 contentFull.style.display = 'block'; // Show the full content
@@ -147,7 +149,7 @@ nav_order: 4
                 event.target.innerText = '▼'; // Optional: change the arrow direction back
             }
             // Adjust the timeline spine height
-            newBlockHeight = newBlockHeight + item.offsetHeight
+            let newBlockHeight = -contentPrev.offsetHeight + newsContent.offsetHeight;
             timelineSpine.style.height = (maxHeight + 50 + newBlockHeight) + 'px'; // +20 for a little extra space
         }
     });

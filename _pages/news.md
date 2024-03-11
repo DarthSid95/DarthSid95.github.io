@@ -44,6 +44,7 @@ nav_order: 4
     position: relative;
     border-radius: 6px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add shadow for depth */
+    color: black;
 }
 
 /* Adjust the position of the content boxes */
@@ -106,7 +107,8 @@ nav_order: 4
     {% for item in site.news limit: news_limit %}
         <div class="container right">
             <div class="content">
-                <h2>2023</h2>
+                <h2> {{ item.date | date: '%Y' }} </h2> <br>
+                <h3> {{ item.date | date: '%b %d, %Y' }} </h3> <br>
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
             </div>
     {% endfor %}

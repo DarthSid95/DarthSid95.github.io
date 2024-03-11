@@ -142,10 +142,10 @@ nav_order: 4
             // Toggle visibility based on the current display style
             if (contentFull.style.display === 'none' || contentFull.style.display === '') {
                 contentFull.style.display = 'block'; // Show the full content
-                event.target.innerText = '<i class="fa-solid fa-chevron-up"></i>'; // Optional: change the arrow direction
+                event.target.style.transform = 'rotate(180deg);' // Optional: change the arrow direction
             } else {
                 contentFull.style.display = 'none'; // Hide the full content
-                event.target.innerText = '<i class="fa-solid fa-chevron-down"></i>'; // Optional: change the arrow direction back
+                event.target.innerText = 'rotate(360deg);'; // Optional: change the arrow direction back
             }
             // Adjust the timeline spine height
             let newBlockHeight = -contentPrev.offsetHeight + newsContent.offsetHeight;

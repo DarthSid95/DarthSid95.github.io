@@ -56,6 +56,12 @@ nav_order: 4
     padding: 20px 0;
 }
 
+#news-timeline,
+#news-timeline * { /* Targets #news-timeline and all its child elements */
+    color: black; /* Sets text color to black */
+}
+
+
 .timeline-spine {
     color: black;
     position: absolute;

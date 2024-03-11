@@ -156,12 +156,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let maxHeight = 0;
 
     newsItems.forEach(item => {
-        // Calculate the bottom position of each news item
-        let itemBottom = item.offsetTop + item.offsetHeight;
-        if (itemBottom > maxHeight) {
-            maxHeight = itemBottom;
-        }
-
         var year = parseInt(item.getAttribute('data-year'), 10);
         if(year % 2 === 0) {
             // Even year, goes to the left
@@ -169,6 +163,14 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             // Odd year, goes to the right
             item.classList.add('news-right');
+        }
+    });
+
+    newsItems.forEach(function(item) {
+        // Calculate the bottom position of each news item
+        let itemBottom = item.offsetTop + item.offsetHeight;
+        if (itemBottom > maxHeight) {
+            maxHeight = itemBottom;
         }
     });
 

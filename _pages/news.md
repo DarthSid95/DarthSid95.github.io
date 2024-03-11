@@ -138,14 +138,18 @@ nav_order: 4
             const contentFull = event.target.closest('.news-content').querySelector('.content-full');
             const newsContent = event.target.closest('.news-content');
             const contentPrev = newsContent.querySelector('.content-preview');
+            const expandArrow = event.target.closest('.expand-arrow');
+            const icon = expandArrow.querySelector('i');
 
             // Toggle visibility based on the current display style
             if (contentFull.style.display === 'none' || contentFull.style.display === '') {
                 contentFull.style.display = 'block'; // Show the full content
-                event.target.style.transform = 'rotate(180deg);' // Optional: change the arrow direction
+                icon.classList.remove('fa-solid fa-chevron-down'); // Optional: change the arrow direction
+                icon.classList.add('fa-solid fa-chevron-up')
             } else {
                 contentFull.style.display = 'none'; // Hide the full content
-                event.target.innerText = 'rotate(360deg);'; // Optional: change the arrow direction back
+                icon.classList.remove('fa-solid fa-chevron-up'); // Optional: change the arrow direction
+                icon.classList.add('fa-solid fa-chevron-down')
             }
             // Adjust the timeline spine height
             let newBlockHeight = -contentPrev.offsetHeight + newsContent.offsetHeight;

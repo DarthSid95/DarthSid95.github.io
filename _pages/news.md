@@ -89,6 +89,7 @@ nav_order: 4
     {% for item in news %}
     <div class="news-item" data-year="{{ item.date | date: '%Y' }}">
         <div class="news-content">
+        <h2> {{item.title}}</h2>
         <h2> {{ item.date | date: '%Y' }} </h2> <br>
         <b> {{ item.date | date: '%b %d' }} </b>&nbsp;{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
         </div>

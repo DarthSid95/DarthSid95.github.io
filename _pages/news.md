@@ -78,7 +78,24 @@ nav_order: 4
     background-color: #fff;
     padding: 10px;
 }
+.content-full {
+    display: none; /* Initially hidden */
+}
 
+.expand-arrow {
+    cursor: pointer;
+    color: black; /* Arrow color, ensure it's visible against the background */
+    text-align: center; /* Center the arrow below the content */
+}
+
+/* Styles when content is expanded */
+.expanded .content-full {
+    display: block; /* Show full content */
+}
+
+.expanded .expand-arrow {
+    transform: rotate(180deg); /* Flip arrow to indicate collapsibility */
+}
 </style>
 
 {% assign news = site.news | reverse %}
@@ -87,18 +104,40 @@ nav_order: 4
     <div class="timeline-spine"></div> <!-- Central spine of the timeline -->
     <!-- Placeholder loop: Replace with your template engine's loop syntax -->
     {% for item in news %}
+    {% if item.inline %}
     <div class="news-item" data-year="{{ item.date | date: '%Y' }}">
         <div class="news-content">
-        <h2> {{item.redirect}}</h2>
         <h2> {{ item.date | date: '%Y' }} </h2> <br>
         <b> {{ item.date | date: '%b %d' }} </b>&nbsp;{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
         </div>
     </div>
+     {% else %}
+     <div class="news-item" data-year="{{ item.date | date: '%Y' }}">
+        <div class="news-content">
+            <h2>{{ item.date | date: '%Y' }}</h2>
+            <b>{{ item.date | date: '%b %d' }}</b>
+            <!-- The content before the delimiter goes here -->
+            <div class="content-preview">{{ item.title }}</div>
+            <!-- Hidden part of the content -->
+            <div class="content-full" style="display: none;">{{ item.content }}</div>
+            <!-- Clickable arrow for expanding -->
+            <div class="expand-arrow">▼</div>
+        </div>
+    </div>
+     {% endif %}
     {% endfor %}
 </div>
 
 <script type='text/javascript'>
     document.addEventListener("DOMContentLoaded", function() {
+        
+    document.querySelectorAll('.expand-arrow').forEach(function(arrow) {
+        arrow.addEventListener('click', function() {
+            const newsContent = arrow.closest('.news-content');
+            newsContent.classList.toggle('expanded');
+        });
+    });
+
     const newsItems = document.querySelectorAll('.news-item');
     let maxHeight = 0;
 

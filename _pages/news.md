@@ -82,20 +82,29 @@ nav_order: 4
     content: '';
     position: absolute;
     top: 50%;
-    width: 50%; /* Adjust if needed */
     height: 2px;
     background-color: #333;
     z-index: 0;
 }
 
 .news-left::before {
-    right: 100%;
+    right: 50%;
+    width: calc(50% - 20%); /* Adjust based on .news-item width */
 }
 
 .news-right::before {
-    left: 100%;
+    left: 50%;
+    width: calc(50% - 20%); /* Adjust based on .news-item width */
+}
+.news-left {
+    float: left;
+    margin-right: 10%;
 }
 
+.news-right {
+    float: right;
+    margin-left: 10%;
+}
 .news-content {
     background-color: #fff;
     padding: 10px;

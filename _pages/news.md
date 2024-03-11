@@ -83,19 +83,20 @@ nav_order: 4
     content: '';
     position: absolute;
     top: 50%;
-    width: 25%;
+    width: 25%; /* Adjust if needed */
     height: 2px;
     background-color: #333;
     z-index: 0;
 }
 
 .news-left::before {
-    right: 50%;
+    right: 100%;
 }
 
 .news-right::before {
-    left: 50%;
+    left: 100%;
 }
+
 .news-left {
     float: left;
     margin-right: 10%;

@@ -82,6 +82,7 @@ nav_order: 4
     content: '';
     position: absolute;
     top: 50%;
+    width: 25%;
     height: 2px;
     background-color: #333;
     z-index: 0;
@@ -89,12 +90,10 @@ nav_order: 4
 
 .news-left::before {
     right: 50%;
-    width: calc(50% - 20%); /* Adjust based on .news-item width */
 }
 
 .news-right::before {
     left: 50%;
-    width: calc(50% - 20%); /* Adjust based on .news-item width */
 }
 .news-left {
     float: left;
@@ -105,6 +104,7 @@ nav_order: 4
     float: right;
     margin-left: 10%;
 }
+
 .news-content {
     background-color: #fff;
     padding: 10px;

@@ -22,19 +22,25 @@ nav_order: 4
 }
 
 .news-item {
-    position: relative;
+    position: absolute; /* Updated to absolute */
     width: 40%; /* Adjust based on your preference */
     padding: 10px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
 
 .news-content {
     padding: 10px;
-    color: black;
-    background-color: #fff;
-    border: 1px solid #ddd;
-}   /* Add more styling according to your preference */
+}
+
+.connector {
+    position: absolute;
+    width: 2px; /* Width of the connecting line */
+    background-color: #333; /* Color of the connecting line */
+    top: 50%;
+}
 </style>
 
 
@@ -45,8 +51,7 @@ nav_order: 4
     <div class="news-item" data-year="{{ item.date | date: '%Y' }}">
         <div class="news-content">
         <h2> {{ item.date | date: '%Y' }} </h2> <br>
-        <h3> {{ item.date | date: '%b %d, %Y' }} </h3> <br>
-        {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+        <h3> {{ item.date | date: '%b %d' }} </h3>:&nbsp;{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
         </div>
     </div>
     {% endfor %}
@@ -55,18 +60,29 @@ nav_order: 4
 <script type='text/javascript'>
 document.addEventListener("DOMContentLoaded", function() {
     var newsItems = document.querySelectorAll('.news-item');
+    var timelineSpine = document.querySelector('.timeline-spine');
+    var spineLeftOffset = timelineSpine.offsetLeft + timelineSpine.offsetWidth / 2; // Center of the spine
 
-    newsItems.forEach(function(item) {
+    newsItems.forEach(function(item, index) {
         var year = parseInt(item.getAttribute('data-year'), 10);
+        var connector = document.createElement('div');
+        connector.classList.add('connector');
+
         if(year % 2 === 0) {
             // Even year, goes to the left
-            item.style.right = "52%"; // Adjust based on the spine width
-            item.style.transform = "translateX(50%)";
+            item.style.right = (window.innerWidth - spineLeftOffset) + "px";
+            connector.style.right = "50%";
+            connector.style.height = "2px"; // Horizontal connector
+            connector.style.width = (window.innerWidth - spineLeftOffset - item.offsetWidth / 2) + "px"; // Adjust connector width
         } else {
             // Odd year, goes to the right
-            item.style.left = "52%"; // Adjust based on the spine width
-            item.style.transform = "translateX(-50%)";
+            item.style.left = spineLeftOffset + "px";
+            connector.style.left = "50%";
+            connector.style.height = "2px"; // Horizontal connector
+            connector.style.width = (spineLeftOffset - item.offsetWidth / 2) + "px"; // Adjust connector width
         }
+
+        item.appendChild(connector);
     });
 });
 </script>

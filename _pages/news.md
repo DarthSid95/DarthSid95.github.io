@@ -5,6 +5,7 @@ permalink: /news/
 nav: true
 nav_order: 4
 ---
+
 <style>
 #news-timeline {
     color: black;

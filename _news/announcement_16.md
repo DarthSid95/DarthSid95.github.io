@@ -5,13 +5,8 @@ date: 2024-02-06 14:00:00-0400
 inline: false
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+My Ph.D. research recieved the Prof. Satish Dhawan Research Award for the year 2023, for my contributions relating generative adversarial networks and diffusion models to high-dimension interpolation, Fourier approximations, and partial differential equations in very large dimensional space. For mode details, check out the [Official Website](https://odaa.iisc.ac.in/prof-satish-dhawan-research-award/)
 
-#### Hipster list
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7160941834628677633" height="877" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Siddarth Asokan wins the Prof. Satish Dhawan Research Award for the most impactful research in the area of advanced computer and communication systems! Congratulations Dr <a href="https://twitter.com/Siddarth95?ref_src=twsrc%5Etfw">@Siddarth95</a>! <a href="https://t.co/cPGa9QXgb5">pic.twitter.com/cPGa9QXgb5</a></p>&mdash; Spectrum Lab (@SpectrumLabIISc) <a href="https://twitter.com/SpectrumLabIISc/status/1754909650380849367?ref_src=twsrc%5Etfw">February 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

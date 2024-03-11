@@ -49,6 +49,7 @@ nav_order: 4
 
 <style>
 #news-timeline {
+    color: black;
     position: relative;
     width: 100%;
     min-height: 1500px; /* Ensure container has a minimum height */
@@ -56,12 +57,13 @@ nav_order: 4
 }
 
 .timeline-spine {
+    color: black;
     position: absolute;
     left: 50%;
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: #333;
+    background-color: black;
     z-index: 1; /* Ensure it's above connecting lines */
 }
 
@@ -123,7 +125,7 @@ nav_order: 4
     <div class="news-item" data-year="{{ item.date | date: '%Y' }}">
         <div class="news-content">
         <h2> {{ item.date | date: '%Y' }} </h2> <br>
-        <h4> {{ item.date | date: '%b %d' }} </h4>:&nbsp;{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+        <b> {{ item.date | date: '%b %d' }} </b>&nbsp;{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
         </div>
     </div>
     {% endfor %}
@@ -151,8 +153,15 @@ document.addEventListener("DOMContentLoaded", function() {
 <script type='text/javascript'>
     document.addEventListener("DOMContentLoaded", function() {
     const newsItems = document.querySelectorAll('.news-item');
+    let maxHeight = 0;
 
     newsItems.forEach(item => {
+        // Calculate the bottom position of each news item
+        let itemBottom = item.offsetTop + item.offsetHeight;
+        if (itemBottom > maxHeight) {
+            maxHeight = itemBottom;
+        }
+
         var year = parseInt(item.getAttribute('data-year'), 10);
         if(year % 2 === 0) {
             // Even year, goes to the left
@@ -162,6 +171,11 @@ document.addEventListener("DOMContentLoaded", function() {
             item.classList.add('news-right');
         }
     });
+
+    // Adjust the timeline spine height
+    const timelineSpine = document.querySelector('.timeline-spine');
+    timelineSpine.style.height = (maxHeight + 20) + 'px'; // +20 for a little extra space
+
 });
 </script>
 

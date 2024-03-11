@@ -130,12 +130,16 @@ nav_order: 4
 
 <script type='text/javascript'>
     document.addEventListener("DOMContentLoaded", function() {
-        
-    document.querySelectorAll('.expand-arrow').forEach(function(arrow) {
-        arrow.addEventListener('click', function() {
-            const newsContent = arrow.closest('.news-content');
+
+    // Attach the event listener to a static parent element
+    document.getElementById('news-timeline').addEventListener('click', function(event) {
+        // Check if the clicked element or its parent has the class 'expand-arrow'
+        let target = event.target;
+        if (target.classList.contains('expand-arrow') || target.parentElement.classList.contains('expand-arrow')) {
+            // Find the closest parent '.news-content' to toggle
+            const newsContent = target.closest('.news-content');
             newsContent.classList.toggle('expanded');
-        });
+        }
     });
 
     const newsItems = document.querySelectorAll('.news-item');

@@ -187,4 +187,4 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-{% include news.liquid %}
+<!-- {% include news.liquid %} -->

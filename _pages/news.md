@@ -62,7 +62,7 @@ nav_order: 4
     {% endfor %}
 </div>
 
-<!-- <script type='text/javascript'>
+<script type='text/javascript'>
 document.addEventListener("DOMContentLoaded", function() {
     var newsItems = document.querySelectorAll('.news-item');
 
@@ -79,40 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-</script> -->
-
-<script type='text/javascript'>
-document.addEventListener("DOMContentLoaded", function() {
-    const newsItems = document.querySelectorAll('.news-item');
-
-    newsItems.forEach(function(item) {
-        const year = parseInt(item.getAttribute('data-year'), 10);
-        let itemPosition = item.offsetLeft + item.offsetWidth / 2; // Center point of the item
-
-        // Create connector
-        const connector = document.createElement('div');
-        connector.classList.add('connector');
-
-        // Determine position and length of connector
-        if (year % 2 === 0) {
-            // Even year, goes to the left
-            item.style.float = "left";
-            connector.style.height = "2px";
-            connector.style.left = itemPosition + "px";
-            connector.style.width = "calc(50% - " + itemPosition + "px)";
-            connector.style.top = item.offsetTop + item.offsetHeight / 2 + "px";
-        } else {
-            // Odd year, goes to the right
-            item.style.float = "right";
-            connector.style.height = "2px";
-            connector.style.right = (window.innerWidth - itemPosition) + "px";
-            connector.style.width = "calc(50% - " + (window.innerWidth - itemPosition) + "px)";
-            connector.style.top = item.offsetTop + item.offsetHeight / 2 + "px";
-        }
-
-        document.getElementById('news-timeline').appendChild(connector);
-    });
-});
-</script>
+</script> 
 
 {% include news.liquid %}

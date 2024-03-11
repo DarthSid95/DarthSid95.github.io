@@ -63,18 +63,18 @@ nav_order: 4
 
 
 .timeline-spine {
-    color: black;
+    color: rgba(100, 100, 100, 0.75);
     position: absolute;
     left: 50%;
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: black;
+    background-color: rgba(100, 100, 100, 0.75);
     z-index: 1; /* Ensure it's above connecting lines */
 }
 
 .news-item {
-    color: black;
+    color: rgba(100, 100, 100, 0.75);
     position: relative;
     width: 40%;
     margin-bottom: 20px;
@@ -83,7 +83,7 @@ nav_order: 4
 }
 
 .news-left, .news-right {
-    color: black;
+    color: rgba(100, 100, 100, 0.75);
     clear: both;
 }
 

@@ -130,14 +130,14 @@ nav_order: 4
 
 <script type='text/javascript'>
     document.addEventListener("DOMContentLoaded", function() {
-
+    const timelineSpine = document.querySelector('.timeline-spine');
     // Event delegation on the #news-timeline for dynamic content
     document.getElementById('news-timeline').addEventListener('click', function(event) {
         // Check if the clicked element is the expand-arrow or its descendant
         if (event.target.closest('.expand-arrow')) {
             // Find the .content-full sibling of the clicked arrow
             const contentFull = event.target.closest('.news-content').querySelector('.content-full');
-            
+            let newBlockHeight = -item.offsetHeight;
             // Toggle visibility based on the current display style
             if (contentFull.style.display === 'none' || contentFull.style.display === '') {
                 contentFull.style.display = 'block'; // Show the full content
@@ -146,6 +146,9 @@ nav_order: 4
                 contentFull.style.display = 'none'; // Hide the full content
                 event.target.innerText = '▼'; // Optional: change the arrow direction back
             }
+            // Adjust the timeline spine height
+            newBlockHeight = newBlockHeight + item.offsetHeight
+            timelineSpine.style.height = (maxHeight + 50 + newBlockHeight) + 'px'; // +20 for a little extra space
         }
     });
 
@@ -172,7 +175,6 @@ nav_order: 4
     });
 
     // Adjust the timeline spine height
-    const timelineSpine = document.querySelector('.timeline-spine');
     timelineSpine.style.height = (maxHeight + 50) + 'px'; // +20 for a little extra space
 
 });

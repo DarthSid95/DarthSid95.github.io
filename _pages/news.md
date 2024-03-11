@@ -120,7 +120,7 @@ nav_order: 4
             <!-- Hidden part of the content -->
             <div class="content-full" style="display: none;">{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</div>
             <!-- Clickable arrow for expanding -->
-            <div class="expand-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+            <div class="expand-arrow"><i class='fa-solid fa-chevron-down'></i></div>
         </div>
     </div>
      {% endif %}
@@ -135,8 +135,8 @@ nav_order: 4
         // Check if the clicked element is the expand-arrow or its descendant
         if (event.target.closest('.expand-arrow')) {
             // Find the .content-full sibling of the clicked arrow
-            const contentFull = event.target.closest('.news-content').querySelector('.content-full');
             const newsContent = event.target.closest('.news-content');
+            const contentFull = newsContent.querySelector('.content-full');
             const contentPrev = newsContent.querySelector('.content-preview');
             const expandArrow = event.target.closest('.expand-arrow');
             const icon = expandArrow.querySelector('i');
@@ -152,8 +152,8 @@ nav_order: 4
                 icon.classList.add('fa-solid fa-chevron-down')
             }
             // Adjust the timeline spine height
-            let newBlockHeight = -contentPrev.offsetHeight + newsContent.offsetHeight;
-            timelineSpine.style.height = (maxHeight + 50 + newBlockHeight) + 'px'; // +20 for a little extra space
+            let newBlockHeight = -contentPrev.offsetHeight + contentFull.offsetHeight;
+            timelineSpine.style.height = (maxHeight + newBlockHeight) + 'px'; // +20 for a little extra space
         }
     });
 

@@ -121,7 +121,7 @@ nav_order: 4
 
     // Adjust the timeline spine height
     const timelineSpine = document.querySelector('.timeline-spine');
-    timelineSpine.style.height = (maxHeight + 20) + 'px'; // +20 for a little extra space
+    timelineSpine.style.height = (maxHeight + 50) + 'px'; // +20 for a little extra space
 
 });
 </script>

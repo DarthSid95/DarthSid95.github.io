@@ -120,7 +120,7 @@ nav_order: 4
             <!-- Hidden part of the content -->
             <div class="content-full" style="display: none;">{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</div>
             <!-- Clickable arrow for expanding -->
-            <div class="expand-arrow"><i class="fa-solid fa-up-down"></i></div>
+            <div class="expand-arrow"><i class="fa-solid fa-chevron-down"></i></div>
         </div>
     </div>
      {% endif %}

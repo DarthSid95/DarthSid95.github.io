@@ -141,15 +141,17 @@ nav_order: 4
             const expandArrow = event.target.closest('.expand-arrow');
             let icon = expandArrow.querySelector('i');
 
+            // var year = parseInt(item.getAttribute('data-year'), 10);
+            // if(year % 2 === 0) {
+
+            // }
             // Toggle visibility based on the current display style
             if (contentFull.style.display === 'none' || contentFull.style.display === '') {
                 contentFull.style.display = 'block'; // Show the full content
-                icon.classList.remove('fa-solid fa-chevron-down'); // Optional: change the arrow direction
-                icon.classList.add('fa-solid fa-chevron-up')
+                icon.className = 'fa-solid fa-chevron-up';// Optional: change the arrow direction
             } else {
                 contentFull.style.display = 'none'; // Hide the full content
-                icon.classList.remove('fa-solid fa-chevron-up'); // Optional: change the arrow direction
-                icon.classList.add('fa-solid fa-chevron-down')
+                icon.className = 'fa-solid fa-chevron-down';
             }
             // Adjust the timeline spine height
             let newBlockHeight = -contentPrev.offsetHeight + contentFull.offsetHeight;

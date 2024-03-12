@@ -4,7 +4,7 @@ title: My Ph.D. Thesis was awarded the Prof. Satish Dhawan Research Award 2023!
 date: 2024-02-06 14:00:00-0400
 inline: false
 ---
-My Ph.D. research received the Prof. Satish Dhawan Research Award for the year 2023, for my contributions relating generative adversarial networks and diffusion models to high-dimension interpolation, Fourier approximations, and partial differential equations in very large dimensional space. For mode details, check out the [Official Website](https://odaa.iisc.ac.in/prof-satish-dhawan-research-award/)
+My Ph.D. research received the Prof. Satish Dhawan Research Award for the year 2023, for my contributions relating generative adversarial networks and diffusion models to high-dimension interpolation, Fourier approximations, and partial differential equations in very large dimensional space. For mode details, check out the [Official Website](https://odaa.iisc.ac.in/prof-satish-dhawan-research-award/) <br>
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7160941834628677633" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 

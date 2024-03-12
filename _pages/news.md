@@ -34,16 +34,16 @@ nav_order: 4
 }
 
 .news-item {
-    color: rgba(100, 100, 100, 0.75);
+    color: rgba(50, 50, 50, 0.5);
     position: relative;
     width: 40%;
     margin-bottom: 20px;
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .news-left, .news-right {
-    color: rgba(100, 100, 100, 0.75);
+    color: rgba(50, 50, 50, 0.5);
     clear: both;
 }
 

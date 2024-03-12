@@ -141,6 +141,7 @@ nav_order: 4
             const contentPrev = newsContent.querySelector('.content-preview');
             const expandArrow = event.target.closest('.expand-arrow');
             let icon = expandArrow.querySelector('i');
+            let InitnewBlockHeight = contentFull.offsetHeight;
 
             // var year = parseInt(item.getAttribute('data-year'), 10);
             // if(year % 2 === 0) {
@@ -155,9 +156,9 @@ nav_order: 4
                 icon.className = 'fa-solid fa-chevron-down';
             }
             // Adjust the timeline spine height
-            let newBlockHeight = -contentPrev.offsetHeight + contentFull.offsetHeight;
-            console.log('Old Height:', contentPrev.offsetHeight, 'New Height:', contentFull.offsetHeight);
-            timelineSpine.style.height = (maxHeight + newBlockHeight) + 'px'; // +20 for a little extra space
+            let newBlockHeight = contentFull.offsetHeight;
+            console.log('InitFullHeight:', InitnewBlockHeight, 'SmallHeight:', contentPrev.offsetHeight, 'FullHeight:', contentFull.offsetHeight);
+            timelineSpine.style.height = (maxHeight + 50 + newBlockHeight) + 'px'; // +20 for a little extra space
         }
     });
 

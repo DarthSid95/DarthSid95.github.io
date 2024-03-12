@@ -130,7 +130,8 @@ document.addEventListener('DOMContentLoaded', function() {
         '/assets/img/left/L22.png',
         '/assets/img/left/L23.png',
         '/assets/img/left/L24.png',
-        '/assets/img/left/L25.png'
+        '/assets/img/left/L25.png',
+        '/assets/img/left/L26.png'
     ];
     var baseImages = [
         '/assets/img/right/R1.png',
@@ -157,7 +158,8 @@ document.addEventListener('DOMContentLoaded', function() {
         '/assets/img/right/R22.png',
         '/assets/img/right/R23.png',
         '/assets/img/right/R24.png',
-        '/assets/img/right/R25.png'
+        '/assets/img/right/R25.png',
+        '/assets/img/right/R26.png'
     ];
 
     var captions = [
@@ -185,7 +187,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'A road and railway track run parallel, bordered by lush greenery. In the foreground, a weathered pole stands beside the track, with a road sign perched at the top, warning of a nearby crossing. The railway sleepers and metal rails reflect a history of journeys past, while the empty road curves gently into the distance, flanked by tall trees that speak to the tranquility of the location.',
         'Vivid flames engulf a pile of wooden logs, their dance casting a warm, dynamic glow. The fires intensity is palpable, with the flames twisting and curling in various shades of yellow, orange, and hints of blue at the base, suggesting a high-temperature burn. Embers float upward, carried by the heat, while the background remains shadowy, highlighting the fires brightness in contrast to its surroundings.',
         'A small bird nestles within the protective embrace of a meticulously constructed nest. The nest, woven from twigs and grass, is cradled in the foliage of a garden. The bird, with soft brown feathers and a watchful eye, seems to be resting or guarding its domain. Surrounding green leaves frame this intimate moment in nature.',
-        'A green-lit wall lantern emits a soft glow in a dark environment. The lantern, with a protective metal cage around the glass, casts a green hue on the wall it is mounted to, creating a feeling of ambiance. The light appears bright within the lantern, suggesting it is the sole source of illumination in the immediate vicinity.'
+        'A green-lit wall lantern emits a soft glow in a dark environment. The lantern, with a protective metal cage around the glass, casts a green hue on the wall it is mounted to, creating a feeling of ambiance. The light appears bright within the lantern, suggesting it is the sole source of illumination in the immediate vicinity.',
+        'A moody and atmospheric landscape where skeletal trees stand stark against a heavy mist. The foreground features a gnarled tree stump and a few patches of snow, evidence of a recent thaw. The desolate trees, bereft of leaves, reach into the foggy backdrop, conveying a sense of desolation and the quietude of winters end. Rocks and withered grass pepper the ground, and the subdued light suggests an overcast day, possibly dusk or dawn.'
     ]
 
     let currentIndex = 0; // Start at the first image

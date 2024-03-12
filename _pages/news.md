@@ -158,7 +158,7 @@ nav_order: 4
             // Adjust the timeline spine height
             let newBlockHeight = contentFull.offsetHeight;
             console.log('InitFullHeight:', InitnewBlockHeight, 'SmallHeight:', contentPrev.offsetHeight, 'FullHeight:', contentFull.offsetHeight);
-            timelineSpine.style.height = (maxHeight + 50 + newBlockHeight) + 'px'; // +20 for a little extra space
+            timelineSpine.style.height = (timelineSpine.style.height + 50 + newBlockHeight) + 'px'; // +20 for a little extra space
         }
     });
 

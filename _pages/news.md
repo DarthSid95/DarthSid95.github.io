@@ -2,6 +2,7 @@
 layout: page
 title: News
 permalink: /news/
+description: Best viewed on a Desktop, or in landscape.
 nav: true
 nav_order: 4
 ---

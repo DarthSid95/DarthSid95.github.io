@@ -14,11 +14,11 @@ nav_order: 3
 
 {% bibliography --query @*[grp=1] %}
 
-<h2 style="text-align: center;">Conference Publications</h2>
+<h2 style="text-align: center;">Conference and Journal Publications</h2>
 
 {% bibliography --query @*[grp=2] %}
 
-<h2 style="text-align: center;">Workshop Publications</h2>
+<h2 style="text-align: center;">Workshop Publications and Prepints</h2>
 
 {% bibliography --query @*[grp=3] %}
 

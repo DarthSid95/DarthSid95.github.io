@@ -10,6 +10,17 @@ nav_order: 3
 <!-- _pages/publications.md -->
 <div class="publications">
 
-{% bibliography %}
+ <h2>Ph.D. Thesis</h2>
 
+{% bibliography --query @*[grp=1] %}
+
+<h2>Conference Publications</h2>
+
+{% bibliography --query @*[grp=2] %}
+
+<h2>Workshop Publications</h2>
+
+{% bibliography --query @*[grp=3] %}
+
+<!-- {% bibliography %} -->
 </div>

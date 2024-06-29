@@ -1,12 +1,20 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - DarthSid95
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - DarthSid95/RumiGANs
+  - DarthSid95/ELF_GANs
+  - DarthSid95/PolyLSGANs
+  - DarthSid95/RBFCoulombGANs
+  - DarthSid95/ScoreFloWGANs
+  - DarthSid95/SnakeGANs
+  - DarthSid95/SpiderDCGAN
+  - DarthSid95/SpiderStyleGAN
+  - DarthSid95/clean-sid
+  - DarthSid95/PolyGANs
+
+  github_colab_users:
+  - yadav-sachin
+
+  github_colab_repos:
+  - yadav-sachin/IRENE

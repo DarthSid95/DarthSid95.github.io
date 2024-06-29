@@ -5,7 +5,9 @@ title: Repositories
 description: A one-stop shop to reach the Repos from my Thesis, and other works!
 nav: false
 ---
+
 <!-- Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories. -->
+
 ## My GitHub Repository
 
 {% if site.data.repositories.github_users %}
@@ -57,7 +59,6 @@ nav: false
   </div>
 
 ---
-
 
 {% endfor %}
 {% endif %}

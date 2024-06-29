@@ -1,6 +1,8 @@
 github_users:
   - DarthSid95
 
+repo_description_lines_max: 2
+
 github_repos:
   - DarthSid95/RumiGANs
   - DarthSid95/ELF_GANs
@@ -13,8 +15,8 @@ github_repos:
   - DarthSid95/clean-sid
   - DarthSid95/PolyGANs
 
-  github_colab_users:
-  - yadav\-sachin
+github_colab_users:
+  - yadav-sachin
 
-  github_colab_repos:
-  - yadav\-sachin/IRENE
+github_colab_repos:
+  - yadav-sachin/IRENE

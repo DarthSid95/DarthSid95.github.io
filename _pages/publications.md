@@ -22,4 +22,8 @@ nav_order: 3
 
 {% bibliography --query @*[grp=3] %}
 
+<h2 style="text-align: center;">Bachelor's Thesis</h2>
+
+{% bibliography --query @*[grp=4] %}
+
 </div>

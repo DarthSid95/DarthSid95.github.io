@@ -16,7 +16,11 @@ github_repos:
   - DarthSid95/PolyGANs
 
 github_colab_users:
+  - kamath-abhijith
+  - nishanth-shetty
+  - mani-312
   - yadav-sachin
 
 github_colab_repos:
   - yadav-sachin/IRENE
+  - mani-312/mild

@@ -13,3 +13,39 @@ Dr. Siddarth Asokan is currently a Research Engineer at the Microsoft Research L
 
 <h2 style="text-align: center;">Images for Public Articles</h2>
 
+
+<style>
+    /* Container to hold the images in a row */
+    .image-row {
+      display: flex;          /* Arrange images in a row */
+      gap: 10px;              /* Space between images */
+      flex-wrap: wrap;        /* Allow images to wrap on smaller screens */
+      justify-content: center;/* Center the images */
+    }
+
+    /* Image styles */
+    .image-row img {
+      flex: 1 1 auto;        /* Let images grow/shrink to fit */
+      max-width: 30%;        /* Each image takes up a maximum of 30% of row */
+      height: auto;          /* Maintain aspect ratio */
+      display: block;        /* Remove any inline spacing */
+    }
+
+    /* Optional: Adjust for smaller screens */
+    @media (max-width: 600px) {
+      .image-row img {
+        max-width: 80%;      /* Larger width on small screens */
+        margin: 0 auto;      /* Center images on their own lines */
+      }
+    }
+</style>
+
+
+<div class="image-row">
+  <img src="https://via.placeholder.com/300x200" alt="Sample Image 1">
+  <img src="https://via.placeholder.com/300x200" alt="Sample Image 2">
+  <img src="https://via.placeholder.com/300x200" alt="Sample Image 3">
+</div>
+
+</body>
+</html>

@@ -43,7 +43,3 @@ Dr. Siddarth Asokan is currently a Research Engineer at the Microsoft Research L
   <img src="/assets/img/headshots/H2.png" alt="Sample Image 2">
   <img src="/assets/img/headshots/H3.png" alt="Sample Image 3">
 </div>
-
-<h2 style="text-align: center;">Banner Image for Custom Cropping</h2>
-
-<iframe frameborder="0" height="100%" src="/assets/img/headshots/H4.png" name="imgbox" id="imgbox"> <p>Banner Image of Siddarth Asokan</p> </iframe>

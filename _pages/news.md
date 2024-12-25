@@ -131,7 +131,7 @@ border: none;
             <!-- The content before the delimiter goes here -->
             <div class="content-preview"><b>{{ item.date | date: '%b %d' }}&nbsp;{{ item.title }}</b></div>
             <!-- Hidden part of the content -->
-            <div class="content-full" style="display: none;">{{ <hr> | item.content | remove: '<p>' | remove: '</p>' | emojify }}</div>
+            <div class="content-full" style="display: none;">{{ | item.content | remove: '<p>' | remove: '</p>' | emojify }}</div>
             <!-- Clickable arrow for expanding -->
             <div class="expand-arrow"><i class="fa-solid fa-chevron-down"></i></div>
         </div>

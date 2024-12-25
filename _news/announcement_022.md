@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Ph.D. Thesis was awarded the IUPRAI Doctoral Dissertation Award 23!!
+title: My Ph.D. Thesis was awarded the IUPRAI Doctoral Dissertation Award!
 date: 2024-12-13 13:18:00-0400
 inline: false
 ---
@@ -11,8 +11,7 @@ border: none; /_ Removes the border around the iframe _/
 }
 
 .video-container iframe{
-width="560";
-height="315";
+width: 100%;
 aspect-ratio: 16 / 9; /_ Adjust aspect ratio as needed _/
 border: none;
 }

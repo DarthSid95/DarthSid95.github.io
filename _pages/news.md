@@ -8,6 +8,12 @@ nav_order: 5
 ---
 
 <style>
+
+.news-iframe {
+  width: 100%;
+  border: none; /* Removes the border around the iframe */
+}
+
 #news-timeline {
     color: black;
     position: relative;

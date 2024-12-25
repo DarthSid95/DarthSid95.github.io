@@ -6,10 +6,6 @@ inline: false
 ---
 
 <style>
-.news-iframe {
-border: none; /_ Removes the border around the iframe _/
-}
-
 .video-container iframe{
 width: 100%;
 aspect-ratio: 16 / 9; /_ Adjust aspect ratio as needed _/

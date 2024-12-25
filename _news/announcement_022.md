@@ -10,7 +10,8 @@ border: none; /_ Removes the border around the iframe _/
 }
 
 .video-container iframe{
-width: 100%;
+width="560";
+height="315";
 aspect-ratio: 16 / 9; /_ Adjust aspect ratio as needed _/
 border: none;
 }
@@ -25,10 +26,6 @@ My Ph.D. Thesis was awarded the <b>IUPRAI Doctoral Dissertation Award 23</b> in 
 <img class="responsive-img" src="/assets/img/news/IUPRAI.JPG" alt="Image of Prof. Chandra Sekhar Seelamantula receiving the IUPRAI DDA on behalf of Siddarth Asokan">
 
 <img class="responsive-img" src="/assets/img/news/IUPRAI_DDA.jpg" alt="Image of Siddarth Asokan's Certificate for the IUPRAI DDA">
-
-<iframe class="news-iframe" frameborder="0" scrolling="yes"  src="/assets/img/news/IUPRAI.JPG" name="imgbox" id="imgbox"> <p>Image of Prof. Chandra Sekhar Seelamantula receiving the IUPRAI DDA on behalf of Siddarth Asokan</p> </iframe>
-
-<iframe class="news-iframe" frameborder="0" scrolling="yes"  src="/assets/img/news/IUPRAI_DDA.jpg" name="imgbox" id="imgbox"><p>Siddarth Asokan's Certificate for the IUPRAI DDA</p></iframe>
 
 <div class="video-container">
 <iframe src="https://www.youtube.com/embed/MMFyozyJSDg?si=AUP8MBoaU546EUM5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

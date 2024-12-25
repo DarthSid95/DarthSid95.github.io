@@ -9,9 +9,15 @@ nav_order: 5
 
 <style>
 
-.news-iframe {
-  height: 100%;
-  border: none; /* Removes the border around the iframe */
+.responsive-img {
+width: 100%;
+height: auto; /_ Maintains aspect ratio _/
+}
+
+.video-container iframe{
+width=100%;
+aspect-ratio: 16 / 9; /_ Adjust aspect ratio as needed _/
+border: none;
 }
 
 #news-timeline {

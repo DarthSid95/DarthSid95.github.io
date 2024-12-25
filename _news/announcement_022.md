@@ -6,8 +6,6 @@ inline: false
 ---
 
 .news-iframe {
-width: 600px; /_ Set the desired width _/
-height: 400px; /_ Set the desired height _/
 border: none; /_ Removes the border around the iframe _/
 }
 

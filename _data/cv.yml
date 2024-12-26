@@ -86,37 +86,37 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2024
-      items:
-        - Prof. Satish Dhawan Research Award 2023
-        - IEI Young Engineers Award (Computer Engineering Division) 2024-25
-        - Indian Unit of Pattern Recognition and AI (IUPRAI) Dosctoral Dissertation Award 2023
-    - year: 2023
-      items:
-        - Super Winner - Qualcomm Innovation Felowship
-        - Best Presenter – 14th IISc EECS Symposium – AI/ML Track
-    - year: 2022
-      items:
-        - Winner - Qualcomm Innovation Felowship
-    - year: 2021
-      items:
-        - Winner - Qualcomm Innovation Felowship
-        - Winner - Robert Bosch Center for Cyber-Physical Systems (RBCCPS) Ph.D. Fellowship
-    - year: 2020
-      items:
-        - Finalist - Qualcomm Innovation Felowship
-        - Winner - Robert Bosch Center for Cyber-Physical Systems (RBCCPS) Ph.D. Fellowship
-    - year: 2019
-      items:
-        - Winner - Qualcomm Innovation Felowship
-    - year: 2018
-      items:
-        - Microsoft Research (MSR) Ph.D. Fellowship
     - year: 2017
       items:
         - Runners Up - Ideathon (IISc - MSRIT Symposium on Smart Cities)
         - Runners Up (best project - MSRIT, Class of 2017)
         - Gold Medal (Highest Cumulative GPA - MSRIT, Class of 2017)
+    - year: 2018
+      items:
+        - Microsoft Research (MSR) Ph.D. Fellowship
+    - year: 2019
+      items:
+        - Winner - Qualcomm Innovation Felowship
+    - year: 2020
+      items:
+        - Finalist - Qualcomm Innovation Felowship
+        - Winner - Robert Bosch Center for Cyber-Physical Systems (RBCCPS) Ph.D. Fellowship
+    - year: 2021
+      items:
+        - Winner - Qualcomm Innovation Felowship
+        - Winner - Robert Bosch Center for Cyber-Physical Systems (RBCCPS) Ph.D. Fellowship
+    - year: 2022
+      items:
+        - Winner - Qualcomm Innovation Felowship
+    - year: 2023
+      items:
+        - Super Winner - Qualcomm Innovation Felowship
+        - Best Presenter – 14th IISc EECS Symposium – AI/ML Track
+    - year: 2024
+      items:
+        - Prof. Satish Dhawan Research Award 2023
+        - IEI Young Engineers' Award (Computer Engineering Division) 2024-25
+        - Indian Unit of Pattern Recognition and AI (IUPRAI) Dosctoral Dissertation Award 2023
 
 - title: Relavant Coursework
   type: nested_list

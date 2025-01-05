@@ -2,7 +2,7 @@
 layout: page
 title: Bio
 permalink: /bio/
-description: A sharable biography of public-facing documents, articles, and broadcast emails.
+description: A sharable biography for public-facing documents, articles, and broadcast emails.
 nav: true
 nav_order: 2
 ---

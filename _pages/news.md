@@ -98,93 +98,59 @@ body {
     }
 }
 </style>
-
 <div id="news-timeline">
-    <div class="timeline-spine"></div> <!-- Central spine of the timeline -->
-    <!-- Placeholder loop: Replace with your template engine's loop syntax -->
+    <div class="timeline-spine"></div>
     {% for item in news %}
-    {% if item.inline %}
     <div class="news-item" data-year="{{ item.date | date: '%Y' }}">
         <div class="news-content">
-        <h2> {{ item.date | date: '%Y' }} </h2> <br>
-        <b> {{ item.date | date: '%b %d' }} </b>&nbsp;{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-        </div>
-    </div>
-     {% else %}
-     <div class="news-item" data-year="{{ item.date | date: '%Y' }}">
-        <div class="news-content">
             <h2>{{ item.date | date: '%Y' }}</h2>
-            <!-- The content before the delimiter goes here -->
-            <div class="content-preview"><b>{{ item.date | date: '%b %d' }}&nbsp;{{ item.title }}</b></div>
-            <!-- Hidden part of the content -->
-            <div class="content-full" style="display: none;">{{ | item.content | remove: '<p>' | remove: '</p>' | emojify }}</div>
-            <!-- Clickable arrow for expanding -->
-            <div class="expand-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+            {% if item.inline %}
+                <b>{{ item.date | date: '%b %d' }}</b>&nbsp;{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+                <div class="content-preview"><b>{{ item.date | date: '%b %d' }}&nbsp;{{ item.title }}</b></div>
+                <div class="content-full" style="display: none;">{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</div>
+                <div class="expand-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+            {% endif %}
         </div>
     </div>
-     {% endif %}
     {% endfor %}
 </div>
 
-<script type='text/javascript'>
-    document.addEventListener("DOMContentLoaded", function() {
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const newsItems = document.querySelectorAll('.news-item');
     const timelineSpine = document.querySelector('.timeline-spine');
-    // Event delegation on the #news-timeline for dynamic content
-    document.getElementById('news-timeline').addEventListener('click', function(event) {
-        // Check if the clicked element is the expand-arrow or its descendant
-        if (event.target.closest('.expand-arrow')) {
-            // Find the .content-full sibling of the clicked arrow
-            const newsContent = event.target.closest('.news-content');
-            const contentFull = newsContent.querySelector('.content-full');
-            const contentPrev = newsContent.querySelector('.content-preview');
-            const expandArrow = event.target.closest('.expand-arrow');
-            let icon = expandArrow.querySelector('i');
-            let InitnewBlockHeight = contentFull.offsetHeight;
 
-            // var year = parseInt(item.getAttribute('data-year'), 10);
-            // if(year % 2 === 0) {
-
-            // }
-            // Toggle visibility based on the current display style
-            if (contentFull.style.display === 'none' || contentFull.style.display === '') {
-                contentFull.style.display = 'block'; // Show the full content
-                icon.className = 'fa-solid fa-chevron-up';// Optional: change the arrow direction
-            } else {
-                contentFull.style.display = 'none'; // Hide the full content
-                icon.className = 'fa-solid fa-chevron-down';
-            }
-            // Adjust the timeline spine height
-            let newBlockHeight = contentFull.offsetHeight;
-            console.log('InitFullHeight:', InitnewBlockHeight, 'SmallHeight:', contentPrev.offsetHeight, 'FullHeight:', contentFull.offsetHeight);
-            timelineSpine.style.height = (timelineSpine.style.height + 50 + newBlockHeight) + 'px'; // +20 for a little extra space
-        }
+    newsItems.forEach((item, index) => {
+        setTimeout(() => item.classList.add('show'), index * 100);
     });
 
-    const newsItems = document.querySelectorAll('.news-item');
-    let maxHeight = 0;
+    document.querySelectorAll('.expand-arrow').forEach(arrow => {
+        arrow.addEventListener('click', function() {
+            const content = this.parentElement;
+            content.classList.toggle('expanded');
+            const fullContent = content.querySelector('.content-full');
+            if (fullContent.style.display === 'block') {
+                fullContent.style.display = 'none';
+                this.querySelector('i').classList.replace('fa-chevron-up', 'fa-chevron-down');
+            } else {
+                fullContent.style.display = 'block';
+                this.querySelector('i').classList.replace('fa-chevron-down', 'fa-chevron-up');
+            }
+        });
+    });
 
-    newsItems.forEach(item => {
-        var year = parseInt(item.getAttribute('data-year'), 10);
-        if(year % 2 === 0) {
-            // Even year, goes to the left
+    newsItems.forEach((item) => {
+        const year = parseInt(item.getAttribute('data-year'), 10);
+        if (year % 2 === 0) {
             item.classList.add('news-left');
         } else {
-            // Odd year, goes to the right
             item.classList.add('news-right');
         }
     });
 
-    newsItems.forEach(function(item) {
-        // Calculate the bottom position of each news item
-        let itemBottom = item.offsetTop + item.offsetHeight;
-        if (itemBottom > maxHeight) {
-            maxHeight = itemBottom;
-        }
-    });
-
-    // Adjust the timeline spine height
-    timelineSpine.style.height = (maxHeight + 50) + 'px'; // +20 for a little extra space
-
+    const maxHeight = Array.from(newsItems).reduce((max, item) => Math.max(max, item.offsetTop + item.offsetHeight), 0);
+    timelineSpine.style.height = maxHeight + 'px';
 });
 </script>
 

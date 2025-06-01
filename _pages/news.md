@@ -40,7 +40,7 @@ border: none;
     top: 0;
     bottom: 0;
     width: 4px;
-    background: linear-gradient(180deg, #555, #000);
+    background: linear-gradient(180deg, #555, #999);
     transform: translateX(-50%);
 }
 
@@ -53,7 +53,6 @@ border: none;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0;
     transform: translateY(30px);
 }
 

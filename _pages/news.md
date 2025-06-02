@@ -10,7 +10,6 @@ nav_order: 5
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 <style>
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: black;
@@ -18,12 +17,12 @@ body {
 
 .responsive-img {
 width: 100%;
-height: auto; /_ Maintains aspect ratio _/
+height: auto;
 }
 
 .video-container iframe{
 width=100%;
-aspect-ratio: 16 / 9; /_ Adjust aspect ratio as needed _/
+aspect-ratio: 16 / 9;
 border: none;
 }
 
@@ -62,48 +61,6 @@ color: black;
 .news-item.show {
 opacity: 1;
 transform: translateY(0);
-color: black;
-}
-
-.news-item .connector-line {
-position: absolute;
-top: 50%;
-height: 2px;
-background: black;
-z-index: 1;
-display: none;
-}
-
-.news-left .connector-line {
-right: 50%;
-}
-
-.news-right .connector-line {
-left: 50%;
-}
-
-.news-item .connector-dot {
-position: absolute;
-top: 50%;
-width: 14px;
-height: 14px;
-background: black;
-border-radius: 50%;
-z-index: 2;
-transform: translateY(-50%);
-}
-
-.news-left .connector-dot {
-right: calc(50% - 7px);
-}
-
-.news-right .connector-dot {
-left: calc(50% - 7px);
-}
-
-.news-item.show {
-opacity: 1;
-transform: translateY(0);
 }
 
 .news-left {
@@ -115,6 +72,7 @@ clear: both;
 float: right;
 clear: both;
 }
+
 .news-content {
 margin-top: 0;
 font-size: 1.2em;
@@ -142,20 +100,20 @@ color: black;
 }
 
 .expand-arrow {
-    text-align: center;
-    cursor: pointer;
-    font-size: 1.2em;
-    color: black;
-    margin-top: 10px;
+text-align: center;
+cursor: pointer;
+font-size: 1.2em;
+color: black;
+margin-top: 10px;
 }
 
 .expand-arrow i {
-    display: inline-block;
-    transition: transform 0.3s ease;
+display: inline-block;
+transition: transform 0.3s ease;
 }
 
 .expanded .expand-arrow i {
-    transform: rotate(180deg);
+transform: rotate(180deg);
 }
 
 .expanded .content-full {
@@ -171,19 +129,18 @@ color: black;
 }
 
 @media (max-width: 768px) {
-    .news-left, .news-right {
-        float: none;
-        width: 100%;
-    }
-    .connector-line {
-        display: none !important;
-    }
-    .connector-dot {
-        left: calc(50% - 7px) !important;
-        right: auto !important;
-    }
+.news-left, .news-right {
+float: none;
+width: 100%;
 }
-
+.connector-line {
+display: none !important;
+}
+.connector-dot {
+left: calc(50% - 7px) !important;
+right: auto !important;
+}
+}
 
 }
 </style>
@@ -194,8 +151,6 @@ color: black;
     <div class="timeline-spine"></div>
     {% for item in news %}
     <div class="news-item" data-year="{{ item.date | date: '%Y' }}">
-        <div class="connector-line"></div>
-        <div class="connector-dot"></div>
         <div class="news-content">
             <h2>{{ item.date | date: '%Y' }}</h2>
             {% if item.inline %}
@@ -220,22 +175,6 @@ document.addEventListener("DOMContentLoaded", function() {
         timelineSpine.style.height = maxHeight + 'px';
     }
 
-    function updateConnectorLines() {
-        newsItems.forEach(item => {
-            const line = item.querySelector('.connector-line');
-            const spineX = timelineSpine.getBoundingClientRect().left + timelineSpine.offsetWidth / 2;
-            const itemRect = item.getBoundingClientRect();
-            const itemEdge = item.classList.contains('news-left') ? itemRect.right : itemRect.left;
-            const gap = Math.abs(spineX - itemEdge);
-            if (gap > 30) {
-                line.style.display = 'block';
-                line.style.width = gap + 'px';
-            } else {
-                line.style.display = 'none';
-            }
-        });
-    }
-
     newsItems.forEach((item, index) => {
         setTimeout(() => item.classList.add('show'), index * 100);
     });
@@ -253,7 +192,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             setTimeout(() => {
                 updateSpineHeight();
-                updateConnectorLines();
             }, 300);
         });
     });
@@ -268,8 +206,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     updateSpineHeight();
-    updateConnectorLines();
-
-    window.addEventListener('resize', updateConnectorLines);
 });
 </script>

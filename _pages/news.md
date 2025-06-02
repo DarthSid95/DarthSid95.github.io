@@ -129,17 +129,10 @@ color: black;
 }
 
 @media (max-width: 768px) {
-.news-left, .news-right {
-float: none;
-width: 100%;
-}
-.connector-line {
-display: none !important;
-}
-.connector-dot {
-left: calc(50% - 7px) !important;
-right: auto !important;
-}
+    .news-left, .news-right {
+        float: none;
+        width: 100%;
+    }
 }
 
 }

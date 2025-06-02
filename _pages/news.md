@@ -149,7 +149,7 @@ color: black;
             {% if item.inline %}
                 <b>{{ item.date | date: '%b %d' }}</b>&nbsp;{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
             {% else %}
-                <div class="content-preview"><b>{{ item.date | date: '%b %d' }}&nbsp;{{ item.title }}</b></div>
+                <div class="content-preview"><b>{{ item.date | date: '%b %d' }}</b>&nbsp;{{ item.title }}</div>
                 <div class="content-full" style="display: none;">{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</div>
                 <div class="expand-arrow"><i class="fa-solid fa-chevron-down"></i></div>
             {% endif %}

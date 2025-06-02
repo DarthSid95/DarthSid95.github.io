@@ -75,7 +75,6 @@ clear: both;
 
 .news-content {
 margin-top: 0;
-font-size: 1.2em;
 background-color: #fff;
 color: #333;
 color: black;
@@ -83,12 +82,10 @@ color: black;
 
 .news-content h2 {
 margin-top: 0;
-font-size: 1.2em;
 color: black;
 }
 
 .content-preview {
-font-size: 1.2em;
 margin-bottom: 10px;
 color: black;
 }
@@ -102,7 +99,6 @@ color: black;
 .expand-arrow {
 text-align: center;
 cursor: pointer;
-font-size: 1.2em;
 color: black;
 margin-top: 10px;
 }

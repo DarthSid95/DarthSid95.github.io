@@ -88,7 +88,7 @@ color: black;
 }
 
 .content-preview {
-font-weight: bold;
+font-size: 1.2em;
 margin-bottom: 10px;
 color: black;
 }

@@ -194,6 +194,8 @@ color: black;
     <div class="timeline-spine"></div>
     {% for item in news %}
     <div class="news-item" data-year="{{ item.date | date: '%Y' }}">
+        <div class="connector-line"></div>
+        <div class="connector-dot"></div>
         <div class="news-content">
             <h2>{{ item.date | date: '%Y' }}</h2>
             {% if item.inline %}
@@ -221,12 +223,11 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateConnectorLines() {
         newsItems.forEach(item => {
             const line = item.querySelector('.connector-line');
-            const dot = item.querySelector('.connector-dot');
             const spineX = timelineSpine.getBoundingClientRect().left + timelineSpine.offsetWidth / 2;
             const itemRect = item.getBoundingClientRect();
             const itemEdge = item.classList.contains('news-left') ? itemRect.right : itemRect.left;
             const gap = Math.abs(spineX - itemEdge);
-            if (gap > 30) { // only draw if the gap is meaningful
+            if (gap > 30) {
                 line.style.display = 'block';
                 line.style.width = gap + 'px';
             } else {
@@ -242,14 +243,13 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('.expand-arrow').forEach(arrow => {
         arrow.addEventListener('click', function() {
             const content = this.parentElement;
+            const icon = this.querySelector('i');
             content.classList.toggle('expanded');
             const fullContent = content.querySelector('.content-full');
             if (fullContent.style.display === 'block') {
                 fullContent.style.display = 'none';
-                this.querySelector('i').classList.replace('fa-chevron-up', 'fa-chevron-down');
             } else {
                 fullContent.style.display = 'block';
-                this.querySelector('i').classList.replace('fa-chevron-down', 'fa-chevron-up');
             }
             setTimeout(() => {
                 updateSpineHeight();

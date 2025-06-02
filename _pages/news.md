@@ -13,6 +13,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #f4f4f4;
+    color: black;
 }
 
 .responsive-img {
@@ -35,26 +37,28 @@ padding: 20px;
 }
 
 .timeline-spine {
-position: absolute;
-left: 50%;
-top: 0;
-bottom: 0;
-width: 4px;
-background: linear-gradient(180deg, #555, #000);
-transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #555, #999);
+    transform: translateX(-50%);
+    transition: height 0.4s ease;
 }
 
+
 .news-item {
-position: relative;
-width: 45%;
-margin-bottom: 40px;
-padding: 20px;
-background: white;
-border-radius: 10px;
-box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-opacity: 0;
-transform: translateY(30px);
+    position: relative;
+    width: 45%;
+    margin-bottom: 60px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    color: black;
 }
 
 .news-item.show {
@@ -161,6 +165,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const newsItems = document.querySelectorAll('.news-item');
     const timelineSpine = document.querySelector('.timeline-spine');
 
+    function updateSpineHeight() {
+        const maxHeight = Array.from(newsItems).reduce((max, item) => Math.max(max, item.offsetTop + item.offsetHeight), 0);
+        timelineSpine.style.height = maxHeight + 'px';
+    }
+
     newsItems.forEach((item, index) => {
         setTimeout(() => item.classList.add('show'), index * 100);
     });
@@ -177,6 +186,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 fullContent.style.display = 'block';
                 this.querySelector('i').classList.replace('fa-chevron-down', 'fa-chevron-up');
             }
+            setTimeout(updateSpineHeight, 300); // allow content expand to finish before recalculating
         });
     });
 
@@ -189,7 +199,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    const maxHeight = Array.from(newsItems).reduce((max, item) => Math.max(max, item.offsetTop + item.offsetHeight), 0);
-    timelineSpine.style.height = maxHeight + 'px';
+    updateSpineHeight();
 });
 </script>

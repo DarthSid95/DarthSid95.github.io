@@ -66,54 +66,54 @@ color: black;
 }
 
 .news-item .connector-line {
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    background: black;
-    z-index: 1;
-    display: none;
+position: absolute;
+top: 50%;
+height: 2px;
+background: black;
+z-index: 1;
+display: none;
 }
 
 .news-left .connector-line {
-    right: 50%;
+right: 50%;
 }
 
 .news-right .connector-line {
-    left: 50%;
+left: 50%;
 }
 
 .news-item .connector-dot {
-    position: absolute;
-    top: 50%;
-    width: 14px;
-    height: 14px;
-    background: black;
-    border-radius: 50%;
-    z-index: 2;
-    transform: translateY(-50%);
+position: absolute;
+top: 50%;
+width: 14px;
+height: 14px;
+background: black;
+border-radius: 50%;
+z-index: 2;
+transform: translateY(-50%);
 }
 
 .news-left .connector-dot {
-    right: calc(50% - 7px);
+right: calc(50% - 7px);
 }
 
 .news-right .connector-dot {
-    left: calc(50% - 7px);
+left: calc(50% - 7px);
 }
 
 .news-item.show {
-    opacity: 1;
-    transform: translateY(0);
+opacity: 1;
+transform: translateY(0);
 }
 
 .news-left {
-    float: left;
-    clear: both;
+float: left;
+clear: both;
 }
 
 .news-right {
-    float: right;
-    clear: both;
+float: right;
+clear: both;
 }
 .news-content {
 margin-top: 0;

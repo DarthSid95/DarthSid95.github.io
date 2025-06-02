@@ -15,6 +15,17 @@ body {
     padding: 0;
 }
 
+.responsive-img {
+width: 100%;
+height: auto; /_ Maintains aspect ratio _/
+}
+
+.video-container iframe{
+width=100%;
+aspect-ratio: 16 / 9; /_ Adjust aspect ratio as needed _/
+border: none;
+}
+
 #news-timeline {
 position: relative;
 width: 90%;
@@ -51,17 +62,37 @@ opacity: 1;
 transform: translateY(0);
 }
 
+.news-left::before, .news-right::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 25%; /* Adjust if needed */
+    height: 2px;
+    background-color: #333;
+    z-index: 0;
+}
+
+.news-left::before {
+    left: 100%;
+}
+
+.news-right::before {
+    right: 100%;
+}
+
 .news-left {
 float: left;
 clear: both;
+margin-right: 10%;
 }
 
 .news-right {
 float: right;
 clear: both;
+margin-left: 10%;
 }
 
-.news-content h2 {
+.news-content {
 margin-top: 0;
 font-size: 1.2em;
 background-color: #fff;
@@ -91,6 +122,12 @@ transition: transform 0.3s ease;
 transform: rotate(180deg);
 }
 
+/* Styles when content is expanded */
+.expanded .content-full {
+    display: block; /* Show full content */
+}
+
+
 @media (max-width: 768px) {
 .news-left, .news-right {
 float: none;
@@ -98,6 +135,8 @@ width: 100%;
 }
 }
 </style>
+
+{% assign news = site.news | reverse %}
 
 <div id="news-timeline">
     <div class="timeline-spine"></div>

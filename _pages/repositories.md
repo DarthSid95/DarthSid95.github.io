@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: Repositories
-description: A one-stop shop to reach the Repos from my Thesis, and other works!
+description: A one-stop shop to reach the Repos from my Thesis and my Publications!
 nav: false
 ---
 

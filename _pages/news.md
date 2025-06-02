@@ -125,10 +125,10 @@ color: black;
 }
 
 @media (max-width: 768px) {
-    .news-left, .news-right {
-        float: none;
-        width: 100%;
-    }
+.news-left, .news-right {
+float: none;
+width: 100%;
+}
 }
 
 }

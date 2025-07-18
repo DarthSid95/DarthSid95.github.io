@@ -1,9 +1,27 @@
 ---
-layout: redirect
+layout: none
 title: <i class="fa-solid fa-images"></i>
 permalink: /photography/
 description: Redirecting to photography portfolio...
 nav: true
 nav_order: 8
-redirect_to: https://photography.siddarthasokan.com
 ---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=https://photography.siddarthasokan.com">
+    <link rel="canonical" href="https://photography.siddarthasokan.com">
+    <script>
+        window.location.replace("https://photography.siddarthasokan.com");
+    </script>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
+        <h1>Redirecting to Photography Portfolio...</h1>
+        <p>If you are not redirected automatically, <a href="https://photography.siddarthasokan.com">click here</a>.</p>
+    </div>
+</body>
+</html>

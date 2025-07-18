@@ -3,7 +3,7 @@
     "name": "Siddarth Asokan",
     "label": "Research Software Development Engineer",
     "image": "",
-    "email": "sasokan@microsoft.com",
+    "email": "siddarth.asokan@microsoft.com",
     "url": "https://www.siddarthasokan.com",
     "summary": "",
     "location": {
@@ -24,17 +24,17 @@
   "work": [
     {
       "name": "Miscrosoft Research Lab India Pvt. Ltd., Bengaluru, India",
-      "position": "Research Sowtware Development Engineer (RSDE) II",
+      "position": "Research Software Development Engineer (RSDE) II",
       "url": "https://www.microsoft.com/en-us/research/people/sasokan/",
       "startDate": "2023 (Nov)",
       "endDate": "",
-      "summary": "Working at the intersection of Generative modeling, Small/Tiny Language Models, Retrieval and Extreme Classification",
-      "highlights": ["Extreme Classification", "Generative modeling", "Information Search and Retrieval"]
+      "summary": "Working at the intersection of Generative modeling and Information Retrieval to build Frontier Large Retrieval Models that power various Microsoft products.",
+      "highlights": ["Generative modeling", "Information Retrieval"]
     },
     {
       "name": "Spectrum Lab, Department of Electrical Engineering Indian Institute of Science, Bengaluru, India",
       "position": "Project Associate",
-      "url": "https://sites.google.com/view/spectrumlabeeiisc/spectrum-lab",
+      "url": "https://spectrum-lab-iisc.github.io",
       "startDate": "2023 (Aug)",
       "endDate": "2023 (Oct)",
       "summary": "Worked Unifying GANs, Diffusion Models, and Score-based generative modelling",
@@ -122,6 +122,10 @@
     },
     {
       "title": "Prof. Satish Dhawan Research Award 2023",
+      "date": "2024"
+    },
+    {
+      "title": "2024 IEI Young Engineer's Award (Computer Science)",
       "date": "2024"
     }
   ],

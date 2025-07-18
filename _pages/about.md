@@ -25,8 +25,7 @@ My research interests are broadly in the area of machine learning and generative
 
 Throughout my Ph.D. I've been graciously funded by the Microsoft Research Ph.D. Fellowship in 2018, the RBCCPS Ph.D. Fellowship in 2020-2021, and 2021-2022, and the Qualcomm Innovation Fellowship in 2019, 2021, 2022 and 2023! My Ph.D. Thesis has also received the Prof. Satish Dhawan Research Award and the Indian Unit of Pattern Recognition and AI (IUPRAI) Doctoral Dissertation Awards.
 
-Looking to join the group as a Research Fellows (A pre-Doc role that opens up around Feb-Apr) or know more about my research? <br>
-Reach out to me at [Firstname].[Lastname] (at) microsoft (dot) com
+Looking to join the group as a Research Fellow (A pre-Doc role that opens up around Feb-Apr) or know more about my research? Reach out to me at [Firstname].[Lastname] (at) microsoft (dot) com
 
 <!---
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.

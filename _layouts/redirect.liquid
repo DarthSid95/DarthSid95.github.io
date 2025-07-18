@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
     <title>{{ page.title | default: site.title }}</title>
     <meta http-equiv="refresh" content="0; url={{ page.redirect_to }}">
     <link rel="canonical" href="{{ page.redirect_to }}">
     <script>
-        window.location.replace("{{ page.redirect_to }}");
+      window.location.replace('{{ page.redirect_to }}');
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <div style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
-        <h1>Redirecting...</h1>
-        <p>If you are not redirected automatically, <a href="{{ page.redirect_to }}">click here</a>.</p>
+      <h1>Redirecting...</h1>
+      <p>If you are not redirected automatically, <a href="{{ page.redirect_to }}">click here</a>.</p>
     </div>
-</body>
+  </body>
 </html>

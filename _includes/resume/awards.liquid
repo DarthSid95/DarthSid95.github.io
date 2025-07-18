@@ -1,5 +1,5 @@
 {% comment %}
-Group awards by year but maintain 2-column layout
+  Group awards by year but maintain 2-column layout
 {% endcomment %}
 {% assign awards_by_year = data[1] | group_by: 'date' | sort: 'name' | reverse %}
 

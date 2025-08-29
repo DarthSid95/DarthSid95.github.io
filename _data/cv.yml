@@ -11,9 +11,11 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Research Sowtware Development Engineer (RSDE) II
+    - title: Senior Researcher
+      year: 2025 (Aug) --  
+    - title: Research Software Development Engineer (RSDE) II
+      year: 2023 (Nov) -- 2025 (Aug)
       institution: Miscrosoft Research Lab India Pvt. Ltd., Bengaluru, India
-      year: 2023 (Nov) --
       description:
         - Generative modeling.
         - Information Search and Retrieval.

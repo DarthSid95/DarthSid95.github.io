@@ -23,11 +23,20 @@
   },
   "work": [
     {
-      "name": "Miscrosoft Research Lab India Pvt. Ltd., Bengaluru, India",
+      "name": "Microsoft Research India Pvt. Ltd., Bengaluru, India",
+      "position": "Senior Researcher",
+      "url": "https://www.microsoft.com/en-us/research/people/sasokan/",
+      "startDate": "2025 (Aug)",
+      "endDate": "",
+      "summary": "Leading research in Generative modeling and Information Retrieval to build next-generation Large Retrieval Models.",
+      "highlights": ["Generative AI", "Information Retrieval", "Large Language Models"]
+    },
+    {
+      "name": "Microsoft Research India Pvt. Ltd., Bengaluru, India",
       "position": "Research Software Development Engineer (RSDE) II",
       "url": "https://www.microsoft.com/en-us/research/people/sasokan/",
       "startDate": "2023 (Nov)",
-      "endDate": "",
+      "endDate": "2025 (Aug)",
       "summary": "Working at the intersection of Generative modeling and Information Retrieval to build Frontier Large Retrieval Models that power various Microsoft products.",
       "highlights": ["Generative modeling", "Information Retrieval"]
     },
@@ -126,6 +135,10 @@
     },
     {
       "title": "2024 IEI Young Engineer's Award (Computer Science)",
+      "date": "2024"
+    },
+    {
+      "title": "Indian Unit of Pattern Recognition and AI (IUPRAI) Doctoral Dissertation Award 2024",
       "date": "2024"
     }
   ],

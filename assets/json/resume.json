@@ -26,7 +26,7 @@
       "name": "Microsoft Research India Pvt. Ltd., Bengaluru, India",
       "position": "Senior Researcher",
       "url": "https://www.microsoft.com/en-us/research/people/sasokan/",
-      "startDate": "2025 (Aug)",
+      "startDate": "25 (Aug)",
       "endDate": "",
       "summary": "Leading research in Generative modeling and Information Retrieval to build next-generation Large Retrieval Models.",
       "highlights": ["Generative AI", "Information Retrieval", "Large Language Models"]
@@ -35,8 +35,8 @@
       "name": "Microsoft Research India Pvt. Ltd., Bengaluru, India",
       "position": "Research Software Development Engineer (RSDE) II",
       "url": "https://www.microsoft.com/en-us/research/people/sasokan/",
-      "startDate": "2023 (Nov)",
-      "endDate": "2025 (Aug)",
+      "startDate": "23 (Nov)",
+      "endDate": "25 (Aug)",
       "summary": "Working at the intersection of Generative modeling and Information Retrieval to build Frontier Large Retrieval Models that power various Microsoft products.",
       "highlights": ["Generative modeling", "Information Retrieval"]
     },
@@ -44,8 +44,8 @@
       "name": "Spectrum Lab, Department of Electrical Engineering Indian Institute of Science, Bengaluru, India",
       "position": "Project Associate",
       "url": "https://spectrum-lab-iisc.github.io",
-      "startDate": "2023 (Aug)",
-      "endDate": "2023 (Oct)",
+      "startDate": "23 (Aug)",
+      "endDate": "23 (Oct)",
       "summary": "Worked Unifying GANs, Diffusion Models, and Score-based generative modelling",
       "highlights": ["GANs", "Score-based Diffusion", "Langevin Sampling"]
     }

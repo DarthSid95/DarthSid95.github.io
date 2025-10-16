@@ -2,7 +2,7 @@
 layout: page
 title: "My Ph.D. Thesis: An Interactive Guide"
 description: "A chapter-by-chapter exploration of my research on GANs"
-img: assets/img/thesis/thesis-cover.jpg
+img: assets/img/thesis/thesis-cover.png
 importance: 1
 category: work
 related_publications: true

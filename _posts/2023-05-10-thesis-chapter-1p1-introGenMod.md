@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thesis Chapter 1: Introduction to GANs"
-date: 2025-10-16 10:00:00
+date: 2025-05-10 10:00:00
 description: "An introduction to Generative Adversarial Networks"
 tags: thesis GANs machine-learning
 categories: thesis-chapters

@@ -32,10 +32,12 @@ Write a summary of your thesis here...
 - Contribution 1
 - Contribution 2
 - Contribution 3
+<!-- 
 ### All Chapters
 
-<div class="publications">
 {% assign thesis_posts = site.posts | where_exp: "post", "post.categories contains 'thesis-chapters'" | sort: "date" %}
+{% if thesis_posts.size > 0 %}
+<div class="publications">
 {% for post in thesis_posts %}
   <div class="row">
     <div class="col-sm-12">
@@ -46,3 +48,7 @@ Write a summary of your thesis here...
   </div>
 {% endfor %}
 </div>
+{% else %}
+<p><em>No thesis chapters published yet. Check back soon!</em></p>
+{% endif %}
+-->

@@ -145,6 +145,15 @@ $$
 
 which are parametric equations of a cycloid.
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="assets/video/Brachistochrone.m4v" class="img-fluid rounded z-depth-1" controls=true autoplay=true muted=true %}
+    </div>
+</div>
+<div class="caption">
+    Animation of the Brachistochrone problem showing the cycloid path as the optimal solution for minimizing travel time under gravity.
+</div>
+
 ## The Higher-Order Euler-Lagrange Condition
 
 We now recall the generalization to the EL condition, considering higher-order gradient penalties in $$n$$-D.

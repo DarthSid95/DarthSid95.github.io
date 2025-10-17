@@ -4,7 +4,7 @@ title: "Thesis Chapter 1.1: Introduction to Generative Modeling"
 date: 2023-05-10 00:00:00
 description: "An introduction to generative modeling, covering autoencoders, VAEs, GANs, flows, and diffusion models"
 tags: thesis GANs machine-learning generative-models
-categories: thesis-chapters
+categories: thesis-chapters-p0
 related_posts: true
 featured: true
 toc:

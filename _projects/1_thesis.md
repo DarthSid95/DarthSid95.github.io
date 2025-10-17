@@ -20,9 +20,13 @@ related_publications: true
   </video>
 </div>
 
+---
+
 ## Overview
 
 This project presents my Ph.D. thesis as an interactive series of blog posts, breaking down the mammoth 512-pager into digestible chapters.
+
+
 
 ## Abstract
 
@@ -34,9 +38,27 @@ This project presents my Ph.D. thesis as an interactive series of blog posts, br
 >
 > In Part-III, we extend the analysis performed in Part-I to GAN generators. In divergence-minimizing GANs, the optimal generator matches the gradient of its push-forward distribution with the gradient of the data distribution (known as the score), linking GANs to score-based Langevin diffusion. In IPM-GANs, the optimal generator performs flow-matching on the gradient-field of the discriminator, thereby deriving an equivalence between the score-matching and flow-matching frameworks. We present implementations of flow-matching GANs, and develop an active-contour-based technique to train the generator in SnakeGANs. Finally, we leverage the gradient field of the discriminator to evolve particles in a Langevin-flow setting, and show that the proposed discriminator-guided Langevin diffusion accelerates baseline score-matching diffusion without the need for noise conditioning.
 
-## Chapters
+## Part 0 -- Introduction
 
-{% assign thesis_posts = site.posts | where_exp: "post", "post.categories contains 'thesis-chapters'" | sort: "date" %}
+{% assign thesis_posts = site.posts | where_exp: "post", "post.categories contains 'thesis-chapters-p0'" | sort: "date" %}
+{% if thesis_posts.size > 0 %}
+<div class="publications">
+{% for post in thesis_posts %}
+  <div class="row">
+    <div class="col-sm-12">
+      <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+      <p>{{ post.description }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% else %}
+<p><em>Rest of the thesis chapters yet to be published. Check back soon!</em></p>
+{% endif %}
+
+## Part I -- Introduction
+
+{% assign thesis_posts = site.posts | where_exp: "post", "post.categories contains 'thesis-chapters-p1'" | sort: "date" %}
 {% if thesis_posts.size > 0 %}
 <div class="publications">
 {% for post in thesis_posts %}

@@ -4,7 +4,7 @@ title: "Thesis Chapter 1.2: Introduction to Generative Adversarial Networks"
 date: 2023-05-10 01:00:00
 description: "An introduction to GANs and Wasserstein Autoencoders, covering the foundational concepts and variants"
 tags: thesis GANs machine-learning generative-models
-categories: thesis-chapters
+categories: thesis-chapters-p0
 related_posts: true
 featured: true
 toc:

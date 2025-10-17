@@ -4,7 +4,7 @@ title: "Thesis Chapter 1.3: Flow-based Models and Diffusion"
 date: 2023-05-10 02:00:00
 description: "An introduction to normalizing flows and score-based diffusion models"
 tags: thesis flows diffusion machine-learning generative-models
-categories: thesis-chapters
+categories: thesis-chapters-p0
 related_posts: true
 featured: true
 toc:

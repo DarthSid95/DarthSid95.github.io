@@ -4,7 +4,7 @@ title: "Thesis Chapter 1.4: An Introduction to Variational Calculus"
 date: 2023-05-10 03:00:00
 description: "An introduction to the Calculus of Variations and the Euler-Lagrange framework"
 tags: thesis calculus-of-variations euler-lagrange optimization
-categories: thesis-chapters
+categories: thesis-chapters-p0
 related_posts: true
 featured: true
 toc:

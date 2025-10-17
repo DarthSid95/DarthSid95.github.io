@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thesis Chapter 1.2: Introduction to Generative Adversarial Networks"
-date: 2023-05-10 23:00:00
+date: 2023-05-10 01:00:00
 description: "An introduction to GANs and Wasserstein Autoencoders, covering the foundational concepts and variants"
 tags: thesis GANs machine-learning generative-models
 categories: thesis-chapters
@@ -102,8 +102,8 @@ where $$\lambda_d$$ is the Lagrange multiplier associated with the regularizer. 
 
 ### Navigation
 
-- **Previous:** [Chapter 1.1: Introduction to Generative Modeling](/blog/2023/thesis-chapter-1p1-introGenMod/)
-- **Next:** [Chapter 1.3: Flow-based and Diffusion Models](/blog/2023/thesis-chapter-1p3-flows/)
+- **Previous:** [Chapter 1.1: Introduction to Generative Modeling](/thesis-chapters/2023/05/10/thesis-chapter-1p1-introGenMod.html)
+- **Next:** [Chapter 1.3: Flow-based and Diffusion Models](/thesis-chapters/2023/05/10/thesis-chapter-1p3-flows-diffusion.html)
 - **Back to:** [Thesis Project](/projects/1_thesis/)
 
 

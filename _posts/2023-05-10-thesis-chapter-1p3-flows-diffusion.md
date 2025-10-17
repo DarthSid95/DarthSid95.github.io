@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thesis Chapter 1.3: Flow-based Models and Diffusion"
-date: 2023-05-10 00:00:00
+date: 2023-05-10 02:00:00
 description: "An introduction to normalizing flows and score-based diffusion models"
 tags: thesis flows diffusion machine-learning generative-models
 categories: thesis-chapters
@@ -34,7 +34,7 @@ $$
 \nabla_{\mathbf{x}} f(\mathbf{x}) = \left[\begin{matrix}
 \frac{\partial f^1}{\partial x_1} & \frac{\partial f^2}{\partial x_1} & \ldots & \ldots &\frac{\partial f^n}{\partial x_1} \\[3pt]
 \frac{\partial f^1}{\partial x_2} & \frac{\partial f^2}{\partial x_2} & \ldots & \ldots &\frac{\partial f^n}{\partial x_2} \\[3pt]
-\vdots&\vdots&\multicolumn{2}{c}{\ddots}&\vdots\\
+\vdots&\vdots&\ddots&\ddots&\vdots\\
 \frac{\partial f^1}{\partial x_n} & \frac{\partial f^2}{\partial x_n} & \ldots & \ldots &\frac{\partial f^n}{\partial x_n} 
 \end{matrix} \right].
 $$
@@ -66,7 +66,7 @@ where $$\mathbf{z}_{t}$$ is an instance of the noise distribution drawn at time 
 Existing score-based approaches train a neural network $$s_{\theta}(\mathbf{x})$$ to approximate the score, by means of a score-matching loss, originally considered in the context of independent component analysis:
 
 $$
-\mathcal{L}(\theta)=\frac{1}{2} \,\mathbb{E}_{{\mathbf{x}}\sim p_d} \left[ \left\Vert s_{\theta}(\mathbf{x}) - \nabla_{\mathbf{x}}\ln p_d(\mathbf{x}) \right\Vert_2^2 \right].
+\mathcal{L}(\theta)=\frac{1}{2} \,\mathbb{E}_{{\mathbf{x}}\sim p_d} \left[ \left\Vert s_{\theta}(\mathbf{x}) - \nabla_{\mathbf{x}}\ln p_d(\mathbf{x}) \right\Vert \right\Vert_2^2 \right].
 $$
 
 The output of the trained network is used to generate samples through the annealed Langevin dynamics in noise-conditioned score networks (NCSN). However, a major limitation is that the predicted score is *weak* in regions far away from the target distribution, which is typically the case at the start of the Markov chain, around $$\mathbf{x}_0\sim p_z$$. Various approaches such as noise scaling, sliced SM, and denoising SM have been proposed to improve the strength of the gradients. Works considering improved discretization of the underlying differential equation have been developed to accelerate the sampling process. Recently, denoising diffusion GANs (DDGANs) were introduced, wherein a GAN is trained to model the diffusion process, with the generator and discriminator networks conditioned on the time index.

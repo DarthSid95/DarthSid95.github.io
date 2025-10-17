@@ -110,7 +110,7 @@ where $$\lambda_d$$ is the Lagrange multiplier associated with the regularizer. 
 
 ### Navigation
 
-- **Previous:** [Chapter 1.1: Introduction to Generative Modeling](/thesis-chapters/2023/05/10/thesis-chapter-1p1-IntroGenMod)
+- **Previous:** [Chapter 1.1: Introduction to Generative Modeling](/thesis-chapters/2023/05/10/thesis-chapter-1p1-IntroGenMod.html)
 - **Next:** [Chapter 1.3: Flow-based and Diffusion Models](/thesis-chapters/2023/05/10/thesis-chapter-1p3-FlowsDiffusion.html)
 - **Back to:** [Thesis Project](/projects/1_thesis/)
 

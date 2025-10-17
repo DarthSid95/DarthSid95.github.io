@@ -205,12 +205,7 @@ This general higher-order form reduces to the standard first-order condition whe
 
 The Euler-Lagrange framework provides a powerful mathematical foundation for analyzing GANs from a variational perspective. In the context of GANs:
 
-- The **discriminator optimization** can be viewed as a functional optimization problem where we seek the optimal function $$D^*(\mathbf{x})$$ that maximizes a divergence or IPM between distributions.
-  
-    *Regularized GANs* that incorporate gradient penalties (such as WGAN-GP [3], Sobolev GAN [4]) naturally fit into the higher-order Euler-Lagrange framework, where the regularizers constrain the class of admissible discriminator functions.
-
-    The simplified EL condition (when derivatives are not involved) can be used to analyze unregularized GAN formulations, while the full EL condition with gradient terms will be essential for understanding regularized GANs. This variational perspective allows us to:
-
+- The **discriminator optimization** can be viewed as a functional optimization problem where we seek the optimal function $$D^*(\mathbf{x})$$ that maximizes a divergence or IPM between distributions. *Regularized GANs* that incorporate gradient penalties (such as WGAN-GP [3], Sobolev GAN [4]) naturally fit into the higher-order Euler-Lagrange framework, where the regularizers constrain the class of admissible discriminator functions. The simplified EL condition (when derivatives are not involved) can be used to analyze unregularized GAN formulations, while the full EL condition with gradient terms will be essential for understanding regularized GANs. This variational perspective allows us to:
     1. Derive closed-form expressions for optimal discriminators
     2. Analyze the effect of various regularization schemes
     3. Connect GAN optimization to classical problems in signal processing and interpolation theory
@@ -236,10 +231,8 @@ The Euler-Lagrange framework provides a powerful mathematical foundation for ana
 
 4. **Mroueh, Y., Sercu, T., & Goel, V. (2018).** Sobolev GAN. In *International Conference on Learning Representations (ICLR)*.
 
-5. **Miyato, T., Kataoka, T., Koyama, M., & Yoshida, Y. (2018).** Spectral normalization for generative adversarial networks. In *International Conference on Learning Representations (ICLR)*.
+5. **Jost, J., & Li-Jost, X. (1998).** *Calculus of Variations*. Cambridge University Press.
 
-6. **Jost, J., & Li-Jost, X. (1998).** *Calculus of Variations*. Cambridge University Press.
+6. **Dacorogna, B. (2007).** *Introduction to the Calculus of Variations* (2nd ed.). Imperial College Press.
 
-7. **Dacorogna, B. (2007).** *Introduction to the Calculus of Variations* (2nd ed.). Imperial College Press.
-
-8. **Evans, L. C. (2010).** *Partial Differential Equations* (2nd ed.). American Mathematical Society.
+7. **Evans, L. C. (2010).** *Partial Differential Equations* (2nd ed.). American Mathematical Society.

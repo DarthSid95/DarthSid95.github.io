@@ -104,23 +104,11 @@ The **Brachistochrone** or "shortest time" problem is considered to be one of th
         {% include figure.liquid loading="eager" path="assets/img/thesis/Brachistochrone/Problem.pdf" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/thesis/Brachistochrone/ProblemV1.pdf" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-<div class="caption">
-    Visualizations of the Brachistochrone problem. Given two points at different heights, we seek the curve that minimizes the travel time of a bead sliding under gravity without friction.
-</div>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/thesis/Brachistochrone/Solution.pdf" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/thesis/Brachistochrone/SolutionV1.pdf" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
 </div>
 <div class="caption">
-    The optimal solution to the Brachistochrone problem. The cycloid (shown) results in the shortest travel time compared to other curves such as a straight line or polynomial path connecting the two points.
+    Visualizations of the Brachistochrone problem. Given two points at different heights, we seek the curve that minimizes the travel time of a bead sliding under gravity without friction. The optimal solution to the Brachistochrone problem, the cycloid, results in the shortest travel time compared to other curves such as a straight line or polynomial path connecting the two points.
 </div>
 
 ### The Solution
@@ -147,7 +135,7 @@ which are parametric equations of a cycloid.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/Brachistochrone.m4v" class="img-fluid rounded z-depth-1" controls=true autoplay=true muted=true %}
+        {% include video.liquid path="assets/video/Brachistochrone.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true muted=true %}
     </div>
 </div>
 <div class="caption">

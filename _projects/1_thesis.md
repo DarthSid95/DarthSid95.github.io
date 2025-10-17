@@ -12,7 +12,7 @@ related_publications: true
 
 This project presents my Ph.D. thesis as an interactive series of blog posts, 
 breaking down complex concepts into digestible chapters.
-
+<!-- 
 ### Table of Contents
 
 1. Introduction
@@ -22,18 +22,8 @@ breaking down complex concepts into digestible chapters.
 <!-- 3. [Chapter 4: Experimental Results](/blog/2025/thesis-chapter-4/) -->
 <!-- 4. [Chapter 5: Conclusions and Future Work](/blog/2025/thesis-chapter-5/) -->
 
-
-### Overview
-
-Write a summary of your thesis here...
-
-### Key Contributions
-
-- Contribution 1
-- Contribution 2
-- Contribution 3
 <!-- 
-### All Chapters
+### All Chapters -->
 
 {% assign thesis_posts = site.posts | where_exp: "post", "post.categories contains 'thesis-chapters'" | sort: "date" %}
 {% if thesis_posts.size > 0 %}

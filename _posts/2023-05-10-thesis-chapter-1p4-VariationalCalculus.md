@@ -191,30 +191,32 @@ $$
 \delta^2\mathcal{L}(y^*(\mathbf{x})) = g^{\prime\prime}(0) =  \frac{\partial^2 g(\epsilon)}{\partial\epsilon^2} \bigg|_{\epsilon = 0}.
 $$
 
-The general higher-order Euler-Lagrange condition for the optimizer $$y^*(\mathbf{x})$$ is given by:
+Evaluating the first variation $$\delta\mathcal{L}(y^*;\eta) = \frac{\partial\mathcal{L}_{y,\epsilon}(\epsilon)}{\partial\epsilon}$$ at $$\epsilon=0$$ yields the Euler-Lagrange condition that the optimizer $$y^*$$ must satisfy:
 
 $$
-\sum_{|\boldsymbol{\alpha}|\leq \ell} (-1)^{|\boldsymbol{\alpha}|} \partial^{\boldsymbol{\alpha}} \left( \frac{\partial\mathcal{F}}{\partial(\partial^{\boldsymbol{\alpha}} y)} \right)\Bigg|_{y=y^*(\mathbf{x})} = 0.
+\left. \frac{\partial \mathcal{F}}{\partial y} + \sum_{j = 1}^{\ell} \left( (-1)^j \sum_{ \boldsymbol{\alpha}:\,|\boldsymbol{\alpha}| = j} \partial^{\boldsymbol{\alpha}} \left( \frac{\partial \mathcal{F}}{\partial ( \partial^{\boldsymbol{\alpha}} y )}\right) \right) \right|_{y= y^*} = 0.
 $$
 
-This general form reduces to the standard first-order condition when $$\ell=1$$, and allows us to handle regularized optimization problems involving higher-order derivatives, which will be relevant in the analysis of gradient-penalized GANs and regularized discriminators.
+As before, the EL condition merely provides us the extrema, and the second-order conditions must be checked to ascertain if the extrema is a minimizer or maximizer. The second-order Legendre condition for $$y^*(\mathbf{x})$$ to be a minimizer is $$g^{\prime\prime}(0) > 0$$ [2].
+
+This general higher-order form reduces to the standard first-order condition when $$\ell=1$$, and allows us to handle regularized optimization problems involving higher-order derivatives, which will be relevant in the analysis of gradient-penalized GANs and regularized discriminators.
 
 ## Connection to Generative Adversarial Networks
 
 The Euler-Lagrange framework provides a powerful mathematical foundation for analyzing GANs from a variational perspective. In the context of GANs:
 
 - The **discriminator optimization** can be viewed as a functional optimization problem where we seek the optimal function $$D^*(\mathbf{x})$$ that maximizes a divergence or IPM between distributions.
+  
+    *Regularized GANs* that incorporate gradient penalties (such as WGAN-GP [3], Sobolev GAN [4]) naturally fit into the higher-order Euler-Lagrange framework, where the regularizers constrain the class of admissible discriminator functions.
 
-- The **generator optimization** seeks the optimal transformation $$G^*(\mathbf{z})$$ that minimizes the discriminator's ability to distinguish real from fake samples.
+    The simplified EL condition (when derivatives are not involved) can be used to analyze unregularized GAN formulations, while the full EL condition with gradient terms will be essential for understanding regularized GANs. This variational perspective allows us to:
 
-- **Regularized GANs** that incorporate gradient penalties (such as WGAN-GP [3], Sobolev GAN [4], or spectral normalization approaches [5]) naturally fit into the higher-order Euler-Lagrange framework, where the regularizers constrain the class of admissible discriminator functions.
+    1. Derive closed-form expressions for optimal discriminators
+    2. Analyze the effect of various regularization schemes
+    3. Connect GAN optimization to classical problems in signal processing and interpolation theory
 
-The simplified EL condition (when derivatives are not involved) will be used extensively in analyzing unregularized GAN formulations, while the full EL condition with gradient terms will be essential for understanding regularized GANs. This variational perspective allows us to:
+- The **generator optimization** seeks the optimal transformation $$G^*(\mathbf{z})$$ that minimizes a loss given the optimal discriminator. What will also be key in this setting, in the time-evolving nature of the generator, as the discriminator changes between iterations. We can further also use the EL setting to understand how GANs link to flow- and score-based diffusion models!!
 
-1. Derive closed-form expressions for optimal discriminators
-2. Understand the equilibrium conditions in the GAN min-max game
-3. Analyze the effect of various regularization schemes
-4. Connect GAN optimization to classical problems in optimal transport and functional analysis
 
 ### Navigation
 

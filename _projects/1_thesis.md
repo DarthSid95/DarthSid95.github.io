@@ -16,7 +16,7 @@ breaking down complex concepts into digestible chapters.
 ### Table of Contents
 
 1. Introduction
-   1. [Chapter 1: Introduction to Generative Modeling](/blog/2023/thesis-chapter-1p1-introGenMod/)
+   1. [Chapter 1: Introduction to Generative Modeling](/blog/2023/05/10/thesis-chapter-1p1-introGenMod)
    <!-- 2. [Chapter 2: Variational Foundations](/blog/2025/thesis-chapter-2/) -->
 <!-- 2. [Chapter 3: Theoretical Analysis](/blog/2025/thesis-chapter-3/) -->
 <!-- 3. [Chapter 4: Experimental Results](/blog/2025/thesis-chapter-4/) -->

@@ -64,6 +64,7 @@ where $$D_{\text{KL}}$$ denotes the Kullback-Leibler (KL) divergence between two
 - **Back to:** [Thesis Project](/projects/1_thesis)
 
 ---
+https://www.siddarthasokan.com/thesis-chapters/2023/05/10/thesis-chapter-1p1-introGenMod.html
 
 ## References
 

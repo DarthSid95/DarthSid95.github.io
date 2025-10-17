@@ -63,4 +63,42 @@ where $$D_{\text{KL}}$$ denotes the Kullback-Leibler (KL) divergence between two
 - **Next:** [Chapter 1.2: Generative Adversarial Networks](/thesis-chapters/2023/05/10/thesis-chapter-1p2-IntroGANs.html)
 - **Back to:** [Thesis Project](/projects/1_thesis)
 
+---
+
+## References
+
+1. **Kang, M., Zhu, J.-Y., Zhang, R., Park, J., Shechtman, E., Paris, S., & Park, T. (2023).** Scaling up GANs for text-to-image synthesis. In *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*.
+
+2. **Guo, J., Lu, S., Cai, H., Zhang, W., Yu, Y., & Wang, J. (2018).** Long text generation via adversarial training with leaked information. *Proceedings of the AAAI Conference on Artificial Intelligence*, 32.
+
+3. **Engel, J., Agrawal, K. K., Chen, S., Gulrajani, I., Donahue, C., & Roberts, A. (2019).** GANSynth: Adversarial neural audio synthesis. In *International Conference on Learning Representations (ICLR)*.
+
+4. **Yu, J., Xu, Y., Koh, J. Y., Luong, T., Baid, G., Wang, Z., Vasudevan, V., Ku, A., Yang, Y., Ayan, B. K., Hutchinson, B., Han, W., Parekh, A., Li, X., Zhang, H., Baldridge, J., & Wu, Y. (2022).** Scaling autoregressive models for content-rich text-to-image generation. *arXiv preprint arXiv:2206.10789*.
+
+5. **Kalos, M. H., & Whitlock, P. A. (1986).** *Monte Carlo Methods.* Wiley Publications.
+
+6. **Carlsson, G., Ishkhanov, T., de Silva, V., & Zomorodian, A. (2008).** On the local behavior of spaces of natural images. *International Journal of Computer Vision*, 76(1), 1-12.
+
+7. **Hinton, G. E., & Zemel, R. S. (1994).** Autoencoders, minimum description length and Helmholtz free energy. In *Advances in Neural Information Processing Systems 6 (NIPS 1993)* (pp. 3-10).
+
+8. **Kingma, D. P., & Welling, M. (2013).** Auto-encoding variational Bayes. *arXiv preprint arXiv:1312.6114*.
+
+9. **Tolstikhin, I., Bousquet, O., Gelly, S., & Schoelkopf, B. (2018).** Wasserstein auto-encoders. In *International Conference on Learning Representations (ICLR)*.
+
+10. **Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., & Bengio, Y. (2014).** Generative adversarial nets. In *Advances in Neural Information Processing Systems 27 (NIPS 2014)* (pp. 2672-2680).
+
+11. **Rezende, D., & Mohamed, S. (2015).** Variational inference with normalizing flows. In *International Conference on Machine Learning (ICML)* (pp. 1530-1538).
+
+12. **Liang, K., Chang, H., Cui, Z., Shan, S., & Chen, X. (2015).** Representation learning with smooth autoencoder. In *12th Asian Conference on Computer Vision* (pp. 72-86).
+
+13. **Ho, J., Jain, A., & Abbeel, P. (2020).** Denoising diffusion probabilistic models. In *Advances in Neural Information Processing Systems 33 (NeurIPS 2020)* (pp. 6840-6851).
+
+14. **Rifai, S., Mesnil, G., Vincent, P., Muller, X., Bengio, Y., Dauphin, Y., & Glorot, X. (2011).** Higher order contractive auto-encoder. In *Joint European Conference on Machine Learning and Knowledge Discovery in Databases* (pp. 645-660). Springer.
+
+15. **Ng, A. (2011).** Sparse autoencoder. *CS294A Lecture Notes*, 72, 1-19.
+
+16. **Figueiredo, M. (2001).** Adaptive sparseness using Jeffreys prior. In *Advances in Neural Information Processing Systems* 2001, 14.
+
+
+
 

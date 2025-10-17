@@ -106,4 +106,76 @@ where $$\lambda_d$$ is the Lagrange multiplier associated with the regularizer. 
 - **Next:** [Chapter 1.3: Flow-based and Diffusion Models](/thesis-chapters/2023/05/10/thesis-chapter-1p3-FlowsDiffusion.html)
 - **Back to:** [Thesis Project](/projects/1_thesis/)
 
+---
+
+## References
+
+1. **Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., & Bengio, Y. (2014).** Generative adversarial nets. In *Advances in Neural Information Processing Systems 27 (NIPS 2014)* (pp. 2672-2680).
+
+2. **Liu, M.-Y., Huang, X., Yu, J., Wang, T.-C., & Mallya, A. (2021).** Generative adversarial networks for image and video synthesis: Algorithms and applications. *Proceedings of the IEEE*, 109(5), 839-862.
+
+3. **Mao, X., Li, Q., Xie, H., Lau, R. Y., Wang, Z., & Smolley, S. P. (2017).** Least squares generative adversarial networks. In *International Conference on Computer Vision (ICCV)* (pp. 2813-2821).
+
+4. **Nowozin, S., Cseke, B., & Tomioka, R. (2016).** f-GAN: Training generative neural samplers using variational divergence minimization. In *Advances in Neural Information Processing Systems 29 (NIPS 2016)* (pp. 271-279).
+
+5. **Tao, C., Chen, L., Henao, R., Feng, J., & Carin, L. (2018).** Chi-square generative adversarial network. In *International Conference on Machine Learning (ICML)* (pp. 4843-4852).
+
+6. **Arjovsky, M., & Bottou, L. (2017).** Towards principled methods for training generative adversarial networks. In *International Conference on Learning Representations (ICLR)*.
+
+7. **Arjovsky, M., Chintala, S., & Bottou, L. (2017).** Wasserstein generative adversarial networks. In *International Conference on Machine Learning (ICML)* (pp. 214-223).
+
+8. **Mroueh, Y., & Sercu, T. (2017).** Fisher GAN. In *Advances in Neural Information Processing Systems 30 (NIPS 2017)* (pp. 2513-2523).
+
+9. **Mroueh, Y., Sercu, T., & Goel, V. (2018).** Sobolev GAN. In *International Conference on Learning Representations (ICLR)*.
+
+10. **Li, Z., Hu, Z., Luo, S., Chen, S., Gao, K., Chen, C., Yang, J., & Xu, B. (2019).** Spectral normalization for generative adversarial networks. In *International Conference on Learning Representations (ICLR)*.
+
+11. **Wang, D., Gong, Z., & Liu, Q. (2016).** Stein variational gradient descent as gradient flow. In *Advances in Neural Information Processing Systems 29 (NIPS 2016)*.
+
+12. **Gulrajani, I., Ahmed, F., Arjovsky, M., Dumoulin, V., & Courville, A. (2017).** Improved training of Wasserstein GANs. In *Advances in Neural Information Processing Systems 30 (NIPS 2017)* (pp. 5767-5777).
+
+13. **Kodali, N., Abernethy, J., Hays, J., & Kira, Z. (2017).** On convergence and stability of GANs. *arXiv preprint arXiv:1705.07215*.
+
+14. **Mescheder, L., Geiger, A., & Nowozin, S. (2018).** Which training methods for GANs do actually converge? In *International Conference on Machine Learning (ICML)* (pp. 3481-3490).
+
+15. **Tolstikhin, I., Bousquet, O., Gelly, S., & Schoelkopf, B. (2018).** Wasserstein auto-encoders. In *International Conference on Learning Representations (ICLR)*.
+
+16. **Makhzani, A., Shlens, J., Jaitly, N., Goodfellow, I., & Frey, B. (2015).** Adversarial autoencoders. *arXiv preprint arXiv:1511.05644*.
+
+17. **Hinton, G. E., & Zemel, R. S. (1994).** Autoencoders, minimum description length and Helmholtz free energy. In *Advances in Neural Information Processing Systems 6 (NIPS 1993)* (pp. 3-10).
+
+18. **Goodfellow, I., Bengio, Y., & Courville, A. (2016).** *Deep Learning.* MIT Press.
+
+19. **Kolouri, S., Pope, P. E., Martin, C. E., & Rohde, G. K. (2019).** Sliced Wasserstein auto-encoders. In *International Conference on Learning Representations (ICLR)*.
+
+20. **Kolouri, S., Zou, Y., & Rohde, G. K. (2018).** Sliced Wasserstein kernels for probability distributions. In *IEEE/CVF Conference on Computer Vision and Pattern Recognition* (pp. 5258-5267).
+
+21. **Patrini, G., van den Berg, R., Forré, P., Carioni, M., Bhargav, S., Welling, M., Genewein, T., & Roth, F. (2020).** Sinkhorn autoencoders. In *Conference on Uncertainty in Artificial Intelligence (UAI)* (pp. 733-743).
+
+22. **Fan, L., Dai, W., Lee, D.-J., & Liu, W. (2019).** On the effectiveness of optimal transport for generative modeling. *arXiv preprint arXiv:1901.11373*.
+
+23. **Patrini, G., van den Berg, R., Forré, P., Carioni, M., Bhargav, S., Welling, M., Genewein, T., & Roth, F. (2020).** Optimal transport autoencoders. In *International Conference on Learning Representations (ICLR)*.
+
+24. **Rubenstein, P., Schoelkopf, B., & Tolstikhin, I. (2018).** On the latent space of Wasserstein auto-encoders. *arXiv preprint arXiv:1802.03761*.
+
+25. **Ghosh, P., Sajjadi, M. S. M., Vergari, A., Black, M., & Schölkopf, B. (2019).** From variational to deterministic autoencoders. *arXiv preprint arXiv:1903.12436*.
+
+26. **Peyré, G., & Cuturi, M. (2019).** Computational optimal transport. *Foundations and Trends in Machine Learning*, 11(5-6), 355-607.
+
+27. **Kodali, N., Abernethy, J., Hays, J., & Kira, Z. (2017).** On convergence and stability of GANs. *arXiv preprint arXiv:1705.07215*.
+
+28. **Kodali, N., Hays, J., Abernethy, J., & Kira, Z. (2017).** How to train your DRAGAN. *arXiv preprint arXiv:1705.07215*.
+
+29. **Adler, J., & Lunz, S. (2018).** Banach Wasserstein GAN. In *Advances in Neural Information Processing Systems 31 (NeurIPS 2018)* (pp. 6754-6763).
+
+30. **Gulrajani, I., Ahmed, F., Arjovsky, M., Dumoulin, V., & Courville, A. (2017).** Improved training of Wasserstein GANs. In *Advances in Neural Information Processing Systems 30 (NIPS 2017)* (pp. 5767-5777).
+
+31. **Petzka, H., Fischer, A., & Lukovnikov, D. (2018).** On the regularization of Wasserstein GANs. In *International Conference on Learning Representations (ICLR)*.
+
+32. **Patel, A. B., Nguyen, T., & Baraniuk, R. G. (2020).** A probabilistic framework for deep learning. In *Advances in Neural Information Processing Systems 29 (NIPS 2016)*.
+
+33. **Mescheder, L., Nowozin, S., & Geiger, A. (2018).** The numerics of GANs. In *Advances in Neural Information Processing Systems 31 (NeurIPS 2018)* (pp. 1825-1835).
+
+34. **Bellemare, M. G., Danihelka, I., Dabney, W., Mohamed, S., Lakshminarayanan, B., Hoyer, S., & Munos, R. (2017).** The Cramer distance as a solution to biased Wasserstein gradients. *arXiv preprint arXiv:1705.10743*.
+
 

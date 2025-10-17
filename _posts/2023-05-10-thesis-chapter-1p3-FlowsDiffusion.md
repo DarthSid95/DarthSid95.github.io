@@ -76,3 +76,55 @@ The output of the trained network is used to generate samples through the anneal
 - **Previous:** [Chapter 1.2: Generative Adversarial Networks](/thesis-chapters/2023/05/10/thesis-chapter-1p2-IntroGANs.html)
 - **Next:** [Chapter 1.4: A Deep Dive into GANs](/blog/2023/thesis-chapter-1p3-VarCalc/)
 - **Back to:** [Thesis Project](/projects/1_thesis/)
+
+---
+
+## References
+
+1. **Rezende, D., & Mohamed, S. (2015).** Variational inference with normalizing flows. In *International Conference on Machine Learning (ICML)* (pp. 1530-1538).
+
+2. **Papamakarios, G., Nalisnick, E., Rezende, D. J., Mohamed, S., & Lakshminarayanan, B. (2021).** Normalizing flows for probabilistic modeling and inference. *Journal of Machine Learning Research*, 22(57), 1-64.
+
+3. **Dinh, L., Krueger, D., & Bengio, Y. (2015).** NICE: Non-linear independent components estimation. In *International Conference on Learning Representations (ICLR) Workshop*.
+
+4. **Dinh, L., Sohl-Dickstein, J., & Bengio, S. (2017).** Density estimation using Real NVP. In *International Conference on Learning Representations (ICLR)*.
+
+5. **Kingma, D. P., & Dhariwal, P. (2018).** Glow: Generative flow using invertible 1×1 convolutions. In *Advances in Neural Information Processing Systems 31 (NeurIPS 2018)* (pp. 10215-10224).
+
+6. **Kingma, D. P., Salimans, T., Jozefowicz, R., Chen, X., Sutskever, I., & Welling, M. (2016).** Improved variational inference with inverse autoregressive flow. In *Advances in Neural Information Processing Systems 29 (NIPS 2016)* (pp. 4743-4751).
+
+7. **Papamakarios, G., Pavlakou, T., & Murray, I. (2017).** Masked autoregressive flow for density estimation. In *Advances in Neural Information Processing Systems 30 (NIPS 2017)* (pp. 2338-2347).
+
+8. **Chen, X., Kingma, D. P., Salimans, T., Duan, Y., Dhariwal, P., Schulman, J., Sutskever, I., & Abbeel, P. (2018).** Variational lossy autoencoder. In *International Conference on Learning Representations (ICLR)*.
+
+9. **Mroueh, Y., Sercu, T., & Goel, V. (2019).** Sobolev descent. In *International Conference on Artificial Intelligence and Statistics (AISTATS)* (pp. 2976-2984).
+
+10. **Gong, C., Wang, D., & Liu, Q. (2020).** Unbiased Sobolev descent. In *International Conference on Machine Learning (ICML)* (pp. 3558-3567).
+
+11. **Kumar, M., Weissenborn, D., & Kalchbrenner, N. (2021).** Regularizing normalizing flows with Kallenberg-Leibler divergence. In *Conference on Uncertainty in Artificial Intelligence (UAI)*.
+
+12. **Dinh, L., Sohl-Dickstein, J., Pascanu, R., & Larochelle, H. (2021).** A RAD approach to deep mixture models. In *International Conference on Learning Representations (ICLR)*.
+
+13. **Ho, J., Jain, A., & Abbeel, P. (2020).** Denoising diffusion probabilistic models. In *Advances in Neural Information Processing Systems 33 (NeurIPS 2020)* (pp. 6840-6851).
+
+14. **Song, Y., & Ermon, S. (2019).** Generative modeling by estimating gradients of the data distribution. In *Advances in Neural Information Processing Systems 32 (NeurIPS 2019)* (pp. 11895-11907).
+
+15. **Song, Y., Sohl-Dickstein, J., Kingma, D. P., Kumar, A., Ermon, S., & Poole, B. (2021).** Score-based generative modeling through stochastic differential equations. In *International Conference on Learning Representations (ICLR)*.
+
+16. **Sinclair, A. (1992).** Improved bounds for mixing rates of Markov chains and multicommodity flow. *Combinatorics, Probability and Computing*, 1(4), 351-370.
+
+17. **Hyvärinen, A. (2005).** Estimation of non-normalized statistical models by score matching. *Journal of Machine Learning Research*, 6, 695-709.
+
+18. **Song, Y., & Ermon, S. (2020).** Improved techniques for training score-based generative models. In *Advances in Neural Information Processing Systems 33 (NeurIPS 2020)* (pp. 12438-12448).
+
+19. **Song, Y., Sohl-Dickstein, J., Kingma, D. P., Kumar, A., Ermon, S., & Poole, B. (2021).** Score-based generative modeling through stochastic differential equations. In *International Conference on Learning Representations (ICLR)*.
+
+20. **Song, Y., Durkan, C., Murray, I., & Ermon, S. (2020).** Maximum likelihood training of score-based diffusion models. In *Advances in Neural Information Processing Systems 33 (NeurIPS 2020)* (pp. 1415-1428).
+
+21. **Jolicoeur-Martineau, A., Li, K., Piché-Taillefer, R., Kachman, T., & Mitliagkas, I. (2021).** Gotta go fast when generating data with score-based models. *arXiv preprint arXiv:2105.14080*.
+
+22. **Karras, T., Aittala, M., Aila, T., & Laine, S. (2022).** Elucidating the design space of diffusion-based generative models. In *Advances in Neural Information Processing Systems 35 (NeurIPS 2022)* (pp. 26565-26577).
+
+23. **Xiao, Z., Kreis, K., & Vahdat, A. (2022).** Tackling the generative learning trilemma with denoising diffusion GANs. In *International Conference on Learning Representations (ICLR)*.
+
+24. **Bansal, A., Borgnia, E., Chu, H.-M., Li, J., Kazemi, H., Huang, F., Goldblum, M., Geiping, J., & Goldstein, T. (2023).** Cold diffusion: Inverting arbitrary image transforms without noise. In *Advances in Neural Information Processing Systems 36 (NeurIPS 2023)*.

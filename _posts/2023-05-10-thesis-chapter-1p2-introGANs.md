@@ -68,6 +68,10 @@ with respect to $$D$$ and $$p_g$$, respectively, where $$T(\mathbf{x})$$ is the 
 
 ### Table 1: Divergence-Minimizing GAN Losses
 
+<style>
+.table-wrapper table td:first-child { width: 20%; }
+</style>
+
 | GAN Variant | Discriminator Loss: $$\mathcal{L}_D$$ | Generator Loss: $$\mathcal{L}_G$$ |
 |-------------|---------------------------------------|-----------------------------------|
 | **SGAN** | $$\mathcal{L}_D^{\mathrm{S}} = -\mathbb{E}_{\mathbf{x} \sim p_d}[\ln D(\mathbf{x})]-\mathbb{E}_{\mathbf{x} \sim p_g}[\ln (1-D(\mathbf{x}))]$$ | $$\mathcal{L}_G^{\mathrm{S}} = \mathbb{E}_{\mathbf{x} \sim p_d}[\ln D^*(\mathbf{x})]+\mathbb{E}_{\mathbf{x} \sim p_g}[\ln (1-D^*(\mathbf{x}))]$$ |
@@ -89,6 +93,10 @@ where $$\lambda_d$$ is the Lagrange multiplier associated with the regularizer. 
 
 ### Table 2: IPM-GAN Losses
 
+<style>
+.table-wrapper table td:first-child { width: 20%; }
+</style>
+
 | GAN Variant | Unregularized Discriminator Loss | Closed-form Metric: $$\mathfrak{D}$$ | Discriminator Constraint Space |
 |-------------|----------------------------------|--------------------------------------|--------------------------------|
 | **$$f$$-GANs** | $$-\mathbb{E}_{\mathbf{x} \sim p_d}[T(\mathbf{x})] +\mathbb{E}_{\mathbf{x} \sim p_g}[f^{c}(T(\mathbf{x}))]$$ | $$\mathbb{E}_{\mathbf{x}\sim p_g} \left[ f\left( \frac{p_d(\mathbf{x})}{p_g(\mathbf{x})}\right) \right]$$ | $$\{T = g(D(\cdot)):\,\mathcal{X} \rightarrow \mathbb{R}\,;\,T\in\mathrm{dom}(f)\}$$ |
@@ -102,7 +110,7 @@ where $$\lambda_d$$ is the Lagrange multiplier associated with the regularizer. 
 
 ### Navigation
 
-- **Previous:** [Chapter 1.1: Introduction to Generative Modeling](/thesis-chapters/2023/05/10/thesis-chapter-1p1-IntroGenMod.html)
+- **Previous:** [Chapter 1.1: Introduction to Generative Modeling](/thesis-chapters/2023/05/10/thesis-chapter-1p1-IntroGenMod)
 - **Next:** [Chapter 1.3: Flow-based and Diffusion Models](/thesis-chapters/2023/05/10/thesis-chapter-1p3-FlowsDiffusion.html)
 - **Back to:** [Thesis Project](/projects/1_thesis/)
 

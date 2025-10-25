@@ -73,7 +73,7 @@ The output of the trained network is used to generate samples through the anneal
 
 ### Navigation
 
-- **Previous:** [Chapter 1.2: Generative Adversarial Networks](/thesis-chapters-p0/2023/05/10/thesis-chapter-1p2-IntroGANs.html)
+- **Previous:** [Chapter 1.2: Generative Adversarial Networks](/thesis-chapters-p0/2023/05/10/thesis-chapter-1p2-introGANs.html)
 - **Next:** [Chapter 1.4: An Introduction to Variational Calculus](/thesis-chapters-p0/2023/05/10/thesis-chapter-1p4-VariationalCalculus.html)
 - **Back to:** [Thesis Project](/projects/1_thesis/)
 

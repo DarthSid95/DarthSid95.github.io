@@ -215,7 +215,7 @@ The Euler-Lagrange framework provides a powerful mathematical foundation for ana
 
 ### Navigation
 
-- **Previous:** [Chapter 1.3: Flow-based and Diffusion Models](/thesis-chapters/2023/05/10/thesis-chapter-1p3-FlowsDiffusion.html)
+- **Previous:** [Chapter 1.3: Flow-based and Diffusion Models](/thesis-chapters-p0/2023/05/10/thesis-chapter-1p3-FlowsDiffusion.html)
 - **Next:** [Chapter 2: Divergence-Minimizing GANs](/blog/2023/thesis-chapter-2-DivergenceGANs/)
 - **Back to:** [Thesis Project](/projects/1_thesis/)
 

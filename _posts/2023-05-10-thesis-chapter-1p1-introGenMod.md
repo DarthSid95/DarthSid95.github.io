@@ -60,7 +60,7 @@ where $$D_{\text{KL}}$$ denotes the Kullback-Leibler (KL) divergence between two
 
 ### Navigation
 
-- **Next:** [Chapter 1.2: Generative Adversarial Networks](/thesis-chapters/2023/05/10/thesis-chapter-1p2-IntroGANs.html)
+- **Next:** [Chapter 1.2: Generative Adversarial Networks](/thesis-chapters-p0/2023/05/10/thesis-chapter-1p2-IntroGANs.html)
 - **Back to:** [Thesis Project](/projects/1_thesis)
 
 ---

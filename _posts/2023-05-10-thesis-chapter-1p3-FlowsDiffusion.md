@@ -66,15 +66,15 @@ where $$\mathbf{z}_{t}$$ is an instance of the noise distribution drawn at time 
 Existing score-based approaches train a neural network $$s_{\theta}(\mathbf{x})$$ to approximate the score, by means of a score-matching loss [17], originally considered in the context of independent component analysis:
 
 $$
-\mathcal{L}(\theta)=\frac{1}{2} \,\mathbb{E}_{{\mathbf{x}}\sim p_d} \left[ \left\Vert s_{\theta}(\mathbf{x}) - \nabla_{\mathbf{x}}\ln p_d(\mathbf{x}) \right\Vert \right\Vert_2^2 \right].
+\mathcal{L}(\theta)=\frac{1}{2} \,\mathbb{E}_{{\mathbf{x}}\sim p_d} \left[ \left\Vert s_{\theta}(\mathbf{x}) - \nabla_{\mathbf{x}}\ln p_d(\mathbf{x}) \right\Vert_2^2 \right].
 $$
 
 The output of the trained network is used to generate samples through the annealed Langevin dynamics in noise-conditioned score networks (NCSN) [14]. However, a major limitation is that the predicted score is *weak* in regions far away from the target distribution, which is typically the case at the start of the Markov chain, around $$\mathbf{x}_0\sim p_z$$. Various approaches such as noise scaling [14], sliced SM [18], and denoising SM [13,15] have been proposed to improve the strength of the gradients. Works considering improved discretization of the underlying differential equation [15,20,21,22] have been developed to accelerate the sampling process. Recently, denoising diffusion GANs (DDGANs) [23] were introduced, wherein a GAN is trained to model the diffusion process, with the generator and discriminator networks conditioned on the time index.
 
 ### Navigation
 
-- **Previous:** [Chapter 1.2: Generative Adversarial Networks](/thesis-chapters/2023/05/10/thesis-chapter-1p2-IntroGANs.html)
-- **Next:** [Chapter 1.4: An Introduction to Variational Calculus](/blog/2023/thesis-chapter-1p4-VariationalCalculus/)
+- **Previous:** [Chapter 1.2: Generative Adversarial Networks](/thesis-chapters-p0/2023/05/10/thesis-chapter-1p2-IntroGANs.html)
+- **Next:** [Chapter 1.4: An Introduction to Variational Calculus](/thesis-chapters-p0/2023/05/10/thesis-chapter-1p4-VariationalCalculus.html)
 - **Back to:** [Thesis Project](/projects/1_thesis/)
 
 ---

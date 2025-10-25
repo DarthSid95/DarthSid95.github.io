@@ -73,7 +73,7 @@ $$
 
 The EL condition is a first-order condition and enforcing it yields the optimum. Whether the optimum corresponds to a minimizer or maximizer of the cost must be checked by invoking the second-order condition, more specifically the Legendre-Clebsch necessary condition for a minimizer. In the 1-D case, the condition is given by $$\frac{\partial^2 \mathcal{F}}{\partial y^{\prime 2}} \geq 0.$$
 
-In the multivariate setting, this condition translates to the positive-semi-definiteness (p.s.d.) of the Hessian matrix $$\mathbb{H}$$ of the Hamiltonian $$\mathcal{H}$$, computed with respect to $$y^{\prime}_i(\mathbf{x})$$ for $$i=1,\ldots,n$$ and evaluated at $$y(\mathbf{x}) = y^*(\mathbf{x})$$: $$\mathbb{H}_{y,\mathcal{H}}\big|_{y=y^*} \geq 0$$, where $$\geq$$ is used to denote the p.s.d. property. The Hamiltonian is given by
+In the multivariate setting, this condition translates to the positive-semi-definiteness (p.s.d.) of the Hessian matrix $$\mathbb{H}$$ of the Hamiltonian $$\mathcal{H}$$, computed with respect to $$ y^{\prime}_i(\mathbf{x}) $$ for $$i =1,\ldots,n$$ and evaluated at $$y(\mathbf{x}) = y^*(\mathbf{x})$$: $$\mathbb{H}_{y,\mathcal{H}}\Vert_{y=y^*} \geq 0$$, where $$\geq$$ is used to denote the p.s.d. property. The Hamiltonian is given by
 
 $$
 \mathcal{H} = \sum_{i=1}^n \left( y_i^{\prime} \frac{\partial\mathcal{F}}{\partial y_i^{\prime}} \right) - \mathcal{F},

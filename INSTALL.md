@@ -88,10 +88,23 @@ $ bundle exec jekyll serve --lsi
 
 To see the template running, open your browser and go to `http://localhost:4000`. You should see a copy of the theme's [demo website](https://alshedivat.github.io/al-folio/). Now, feel free to customize the theme however you like. After you are done, remember to **commit** your final changes.
 
+### Existing macOS installation
+
+If the shell selects macOS's system Ruby instead of an existing Homebrew Ruby, select the installed Homebrew tools for the command. A UTF-8 locale is required for the bibliography:
+
+```bash
+PATH="/usr/local/opt/ruby/bin:$PATH" LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle check
+PATH="/usr/local/opt/ruby/bin:$PATH" LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec jekyll serve --lsi
+```
+
+Jekyll also reads untracked pages and posts. Use a clean Git worktree for production-build validation when the working folder contains unpublished drafts or backup pages with duplicate permalinks.
+
 ## Deployment
 
 Deploying your website to [GitHub Pages](https://pages.github.com/) is the most popular option.
 Starting version [v0.3.5](https://github.com/alshedivat/al-folio/releases/tag/v0.3.5), **al-folio** will automatically re-deploy your webpage each time you push new changes to your repository! :sparkles:
+
+The `Deploy site` workflow builds with the plugins in `Gemfile` and publishes generated files to `gh-pages`. The separate `Validate Jekyll build` workflow checks the same plugin-enabled build without publishing a second copy. Both use the latest Ruby 3.2 patch supported by the runner image.
 
 ### For personal and organization webpages
 

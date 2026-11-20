@@ -106,6 +106,8 @@ Starting version [v0.3.5](https://github.com/alshedivat/al-folio/releases/tag/v0
 
 The `Deploy site` workflow builds with the plugins in `Gemfile` and publishes generated files to `gh-pages`. The separate `Validate Jekyll build` workflow checks the same plugin-enabled build without publishing a second copy. Both use the latest Ruby 3.2 patch supported by the runner image.
 
+The source-link checker skips unresolved Liquid URL expressions, which are validated in the rendered output by `Check for broken links on site`. Other local and external source links still fail the check when broken.
+
 ### For personal and organization webpages
 
 1. The name of your repository **MUST BE** `<your-github-username>.github.io` or `<your-github-orgname>.github.io`.
